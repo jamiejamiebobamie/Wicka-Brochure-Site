@@ -9,7 +9,7 @@ function Homepage() {
 
         <div className="index_buttons">
             <NavLink className="index_grimoire" to="/grimoire" activeClassName="hurray">Read the Grimoire</NavLink>
-            <NavLink className="index_about" to="/about" activeClassName="hurray">About the Game</NavLink>
+            <NavLink className="index_about" to="./about" activeClassName="hurray">About the Game</NavLink>
             <NavLink className="index_download" to="/download" activeClassName="hurray">Download and Play!</NavLink>
         </div>
         <div class="character">
