@@ -25,11 +25,15 @@ class About extends Component {
           <div className="About">
                 <NavBar />
 
-              <h2>About</h2>
-              <h4>"Wicka" is a 3rd person action-adventure game made with the Unreal Engine.</h4>
+                <div className="aboutWordsAndSlide">
 
-              <AboutSlide aboutSlideIndex={this.state.aboutSlideIndex} />
+                <div className="aboutWords">
+                  <h4>"Wicka" is an unfinished 3rd person action-adventure game.</h4>
+                  <h4>Made with the Unreal Engine.</h4>
+                </div>
 
+                  <AboutSlide aboutSlideIndex={this.state.aboutSlideIndex} />
+                </div>
               <ul>
                   <li>Play as the immortal, wax witch, Wicka.</li>
                   <li>Slay monsters.</li>

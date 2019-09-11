@@ -54,18 +54,15 @@ class Grimoire extends Component {
           <NavBar />
 
           <div className="grimoire_slideshow-container fade">
-
                 <GrimoirePage pageIndex={this.state.pageIndex}/>
           </div>
 
-          <div class="navbar_sticky_bottom navbar-light bg-light">
-            <div class="container-fluid">
+          <div class="navbar_sticky_bottom">
                 <div className="book">
                     <button className="book_button_back" type="button" name="back" onClick={() => this.nextPage(false)}></button>
                     <div className="book_sprite_anim" id="book_sprite"></div>
                     <button className="book_button_forward" type="button" name="forward" onClick={() => this.nextPage(true)}></button>
                 </div>
-            </div>
           </div>
 
    </div>
