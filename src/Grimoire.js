@@ -1,6 +1,8 @@
 import React, {Component} from 'react'
 import GrimoirePage from './GrimoirePage'
 import data from './grimoirePages_data.js'
+import NavBar from './NavBar'
+
 
 class Grimoire extends Component {
 
@@ -28,13 +30,12 @@ class Grimoire extends Component {
         }
     }
 
-    // <a className="back_button"href="/">
-    //     <button className="back_button_img" type="button" name="back" title="Back" alt="logo"></button>
-    // </a>
     render (){
         return (
 
           <div className="Grimoire">
+          <NavBar />
+
           <div className="book">
               <button className="book_button_back" type="button" name="back" onClick={() => this.nextPage(false)}></button>
               <div className="book_sprite_anim" id="book_sprite"></div>

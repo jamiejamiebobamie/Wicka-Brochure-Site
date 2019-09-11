@@ -1,10 +1,15 @@
 import React from 'react'
+import NavBar from './NavBar'
+
 // import { NavLink } from 'react-router-dom';
 
 
 function Download() {
   return (
     <div className="Download">
+    <NavBar />
+
+
         <div className="download_instructions">
             <p>This game is no longer in active development and remains unfinished. Follow the link below to my Google drive and click the download button in the top right corner.</p>
             <img className="download_instructions" src="/media/imgs/download_instructions/1.png" width="1000" height="625" alt="logo"/>
