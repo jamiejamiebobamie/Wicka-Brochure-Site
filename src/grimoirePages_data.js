@@ -1,84 +1,115 @@
 const data = [
     {
     title:"Wicka",
-    description:'Wicka is an immortal, wax witch who would prefer to be sleeping right now.',
-    img:"./public/media/gifs/whip_wand2.gif"
+    description:'Wicka is an immortal witch who is made of wax.',
+    img:"media/gifs/whip_wand2.gif",
+    width: 505,
+    height: 338
         },
     {
     title:"Health and Mana",
-    description:'Wicka uses both health and mana to power her spells. Her mana cannot exceed her health, but replinishes over time. Health does not replinish on its own.',
-    img:"media/gifs/mana_health_bar2.gif"
+    description:'Wicka uses both mana and health to power her spells.',
+    img:"media/gifs/mana_health_bar2.gif",
+    width: 348,
+    height: 8
         },
     {
     title:"Enchanted Candles",
-    description:'Wicka can melt the candles she touches and assimilate them into her body, healing her of any damage she\'s sustained.',
-    img:"media/gifs/telekinesis_brick_riding2.gif"
+    description:'The candles in the air replenish Wicka\'s health.',
+    img:"media/gifs/telekinesis_brick_riding2.gif",
+    width: 600,
+    height: 338
         },
     {
     title:"Wicka's Flame",
-    description:'The flame on Wicka\'s head can be sent out, to illuminate the subject of her attention, locking the camera to that enemy.',
-    img:"media/gifs/melt_self1.gif"
+    description:'The flame on Wicka\'s head acts like a target lock-on.',
+    img:"media/gifs/melt_self1.gif",
+    width: 600,
+    height: 338
         },
-
     {
     title:"Whip Wand",
     description:'Whip Wand turns Wicka\'s wand into a whip.',
-    img:"media/gifs/whip_wand1.gif"
+    img:"media/gifs/whip_wand1.gif",
+    width: 600,
+    height: 338
         },
     {
     title:"Spellbooks",
-    description:'Some monsters drop spellbooks that give Wicka a new ability. There are four spellbooks in all.',
-    img:"media/gifs/spell_book_pickups.gif"
+    description:'Monsters drop spellbooks that give Wicka a new ability.',
+    img:"media/gifs/spell_book_pickups.gif",
+    width: 600,
+    height: 338
         },
     {
     title:"Melt",
-    description:'Turning her body into molten wax, Wicka sinks below the stone floor to evade her enemies.',
-    img:"media/gifs/melt_self2.gif"
+    description:'As molten wax, Wicka can sink below the stone floor.',
+    img:"media/gifs/melt_self2.gif",
+    width: 600,
+    height: 338
         },
     {
     title:"Freeze Ray",
-    description:'Freeze enemies in their tracks, for a time.',
-    img:"media/gifs/freeze_ray1.gif"
+    description:'Wicka can freeze enemies in their tracks, for a time.',
+    img:"media/gifs/freeze_ray1.gif",
+    width: 600,
+    height: 338
         },
     {
     title:"Telekinesis",
-    description:'Wicka can lift the heavy stones from the floor with her magic and toss them at her enemies.',
-    img:"media/gifs/telekinesis3.gif"
+    description:'Wicka can toss bricks from the floor at her enemies.',
+    img:"media/gifs/telekinesis3.gif",
+    width: 600,
+    height: 338
         },
     {
-    title:"Telekinesis: Brick-Riding",
-    description:'Using Telekinesis, Wicka can lift the stones from the floor and walk on them.',
-    img:"media/gifs/telekinesis_brick_riding.gif"
+    title:"Brick-Riding",
+    description:'Using Melt then Telekinesis lets Wicka to take to the skies!',
+    img:"media/gifs/telekinesis_brick_riding.gif",
+    width: 600,
+    height: 338
         },
     {
     title:"Immolate",
-    description:'Turn Wicka\'s flame into a raging inferno.',
-    img:"media/gifs/immolate.gif"
+    description:'Immolate turns Wicka\'s flame into a raging inferno.',
+    img:"media/gifs/immolate.gif",
+    width: 600,
+    height: 338
         },
     {
-    title:"Immolate: Melt Ice",
-    description:'Bricks frozen by Freeze Ray cannot be lifted by Telekinesis. Use Immolate to melt the ice.',
-    img:"media/gifs/immolate_melt_ice.gif"
+    title:"Melt Ice",
+    description:'Wicka can use Immolate to free bricks that she has frozen.',
+    img:"media/gifs/immolate_melt_ice.gif",
+    width: 600,
+    height: 338
         },
     {
     title:"Cursed Grimoires",
     description:'Some spellbooks are cursed and attack any who come too close.',
-    img:"media/gifs/book1.gif"
+    img:"media/gifs/book1.gif",
+    width: 600,
+    height: 338
         },
     {
     title:"Monsters",
-    description:'Some say monsters are manifestations of the spellcaster\'s own demons made real by her magic.',
-    img:"media/gifs/telekinesis2.gif"
+    description:'Monsters are the spellcaster\'s demons made real by her magic.',
+    img:"media/gifs/telekinesis2.gif",
+    width: 471,
+    height: 337
         },
     {
     title:"Wick Women",
-    description:'The process by which Wicka achieved her unlife has been replicated before. Who are these other spellcasters and are they friend or foe?',
-    img:"media/imgs/wickwoman1.png"
+    description:'Other wax witches exist...',
+    img:"media/imgs/wickwoman1.png",
+    width: 712,
+    height: 864
         },
     {
     title:"The Controls",
     description:'',
-    img:"media/imgs/wicka_controller_whiteBackground.png"
+    img:"media/imgs/wicka_controller_whiteBackground.png",
+    width: 1306,
+    height: 983
         },
 
 ]

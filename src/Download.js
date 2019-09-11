@@ -11,7 +11,7 @@ function Download() {
 
 
         <div className="download_instructions">
-            <p>This game is no longer in active development and remains unfinished. Follow the link below to my Google drive and click the download button in the top right corner.</p>
+            <p>This game is not finished, but I would love some people to play it and give me some feedback. Follow the link below to my Google drive and click the download button in the top right corner.</p>
             <img className="download_instructions" src="/media/imgs/download_instructions/1.png" width="1000" height="625" alt="logo"/>
             <p>To play the game, you will need a Mac operating system and a controller with a USB connector. Once downloaded, the game must be authorized by your Mac to open it.</p>
             <img className="download_instructions" src="/media/imgs/download_instructions/4.png" width="1000" height="625" alt="logo"/>

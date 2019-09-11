@@ -1,8 +1,11 @@
 import React from 'react'
+import NavBar from './NavBar'
+
 
 function Homepage() {
   return (
     <div className="Homepage">
+        <NavBar />
         <div class="character">
             <div className="candle_sprite_test"/>
             <div className="door_sprite"/>

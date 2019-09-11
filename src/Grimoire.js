@@ -1,7 +1,9 @@
 import React, {Component} from 'react'
 import GrimoirePage from './GrimoirePage'
-import data from './grimoirePages_data.js'
+import data from './grimoirePages_data'
 import NavBar from './NavBar'
+
+const book = document.getElementById("book_sprite");
 
 
 class Grimoire extends Component {
@@ -20,6 +22,8 @@ class Grimoire extends Component {
             } else {
                 this.setState({pageIndex:0})
             }
+            // book.classList.add("animation_forward");
+            // book.style.animationIterationCount = "1";
         } else {
             if (this.state.pageIndex - 1 < 0) {
                 this.setState({pageIndex:this.lastPage-1})
@@ -27,8 +31,21 @@ class Grimoire extends Component {
                 let lastPage = this.state.pageIndex-1
                 this.setState({pageIndex:lastPage})
             }
+            // book.classList.add("animation_backward");
         }
+        // Code for Chrome, Safari and Opera
+        // book.addEventListener("webkitAnimationEnd", this.removeAnimAddAnim);
+        // Standard syntax
+        // book.addEventListener("animationend", this.removeAnimAddAnim);
     }
+
+    removeAnimAddAnim(){
+        // book.classList.add("animation_open");
+        book.classList.remove("animation_backward");
+        book.classList.remove("animation_forward");
+    }
+
+
 
     render (){
         return (
@@ -36,16 +53,19 @@ class Grimoire extends Component {
           <div className="Grimoire">
           <NavBar />
 
-          <div className="book">
-              <button className="book_button_back" type="button" name="back" onClick={() => this.nextPage(false)}></button>
-              <div className="book_sprite_anim" id="book_sprite"></div>
-              <button className="book_button_forward" type="button" name="forward" onClick={() => this.nextPage(true)}></button>
+          <div className="grimoire_slideshow-container fade">
+
+                <GrimoirePage pageIndex={this.state.pageIndex}/>
           </div>
 
-          <div className="grimoire_slideshow-container fade">
-              <div className="mySlides">
-                <GrimoirePage pageIndex={this.state.pageIndex}/>
-              </div>
+          <div class="navbar_sticky_bottom navbar-light bg-light">
+            <div class="container-fluid">
+                <div className="book">
+                    <button className="book_button_back" type="button" name="back" onClick={() => this.nextPage(false)}></button>
+                    <div className="book_sprite_anim" id="book_sprite"></div>
+                    <button className="book_button_forward" type="button" name="forward" onClick={() => this.nextPage(true)}></button>
+                </div>
+            </div>
           </div>
 
    </div>
@@ -54,6 +74,14 @@ class Grimoire extends Component {
         )
     }
 }
+
+// <div className="book">
+//     <button className="book_button_back" type="button" name="back" onClick={() => this.nextPage(false)}></button>
+//     <div className="book_sprite_anim" id="book_sprite"></div>
+//     <button className="book_button_forward" type="button" name="forward" onClick={() => this.nextPage(true)}></button>
+// </div>
+
+
 
 export default Grimoire
 

@@ -89,11 +89,11 @@ html, body {
     /* padding: 130px; */
     /* z-index: 1; */
     /* display: block; */
-    /* margin-top:  -30px; */
+    margin-top:  10px;
     /* margin-bottom: -10; */
-    margin-left: 30px;
+    margin-left: 20px;
     /* margin-right: auto; */
-    width: 700px;
+    width: 450px;
     height: 180px;
     /* background: url('/media/sprites/logo_spritesheet_750by300_29250_38steps_copy.png') left center; */
     background: url('/media/sprites/logo_spritesheet_750by300_29250_38steps_60percent.png') left center;
@@ -101,7 +101,7 @@ html, body {
     /* animation: logoAnim 4s steps(38) infinite; */
     animation: logoAnim 4s steps(39) infinite;
 
-    transform: scale(.6);
+    /* transform: scale(.6); */
 }
 
 @keyframes logoAnim{
@@ -126,18 +126,26 @@ html, body {
     z-index: 5;
     display: block;
     opacity: .5;
-    width: 30vw;
-    height: 10vw;
-    padding-top: 1vw;
-    padding-bottom: 1vw;
+    /* width: 30vw; */
+    /* height: 10vw; */
+    /* padding-top: 1vw; */
+    /* padding-bottom: 1vw; */
+    margin-top: 70px;
     margin-left: 2vw;
     margin-right: 2vw;
-    font-size: 5vw;
-    border-radius: 5px;
+    font-size: 60px;
+    /* border-radius: 5px; */
     letter-spacing: .1vw;
     color: white;
     background-color: transparent;
     font-family: 'Slenderman';
+    /* font-style: normal; */
+    text-decoration: none;
+
+}
+
+.hurray{
+        color: #ebd315;
 }
 
 .index_about:hover,.index_grimoire:hover, .index_download:hover{
@@ -462,7 +470,9 @@ h2{
     margin-right: auto;
     color: white;
     font-family: 'Slenderman';
-    font-size: 8vw;
+    /* font-size: 8vw; */
+    font-size: 100px;
+
     margin-bottom: 2vw;
 }
 
@@ -499,7 +509,9 @@ p{
     margin-right: auto;
     color: #9B3201;
     font-family: 'Optima', sans-serif;
-    font-size: 2vw;
+    /* font-size: 2vw; */
+    font-size: 30px;
+
     text-indent: 0em;
     letter-spacing: .4vw;
     line-height: 3vw;
@@ -524,16 +536,23 @@ h3{
     padding: 1vw;
     margin-right:11vw;
     margin-left:11vw;
-    /* background-color: red; */
+    background-color: red;
 }
 
 .innerDIV{
     display: flex;
     flex-direction: row;
-    /* align-items: baseline; */
-    /* align-items: baseline; */
-    justify-content: space-around;
+    justify-content: space-between;
+    flex-basis: center;
+    /* background-color: blue; */
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 120px;
     /* background-color: pink; */
+}
+
+.grimoire_slideshow-container{
+    /* background-color: red; */
 }
 
 .test_gif_health_bar{
@@ -543,12 +562,21 @@ h3{
 
 }
 
+.navbar_sticky_bottom{
+    position: fixed;
+    Width: 100%;
+    bottom: 0;
+    opacity: .7;
+    background-color: black;
+}
+
 .grimoire_words{
-    padding-right: 75px;
+    /* margin-top: 50px; */
+    padding-right: 8vw;
 }
 
 .grimoire_picture{
-    margin-top: 50px;
+    /* margin-top: 50px; */
 }
 
 
@@ -578,9 +606,11 @@ h3{
     display: flex;
     /* margin-top used to be auto */
     /* margin-top: 50px; */
-    margin-left: auto;
-    margin-right: auto;
+    /* margin-left: auto;
+    margin-right: auto; */
     /* flex-grow: 1; */
+    justify-content: center;
+
 }
 
 button:hover + .character_sprite{
@@ -636,15 +666,27 @@ button:hover + .character_sprite{
         background-repeat: no-repeat;
     }
 
-    .book_button_forward, .book_button_forward:hover, .book_button_back, .book_button_back:hover{
+    .book_button_forward, .book_button_forward:hover{
         background-size: 13vw 5vw;
         z-index: 1;
         display: block;
         margin-top:  auto;
         margin-bottom: auto;
-        margin-top: -2vw;
-        margin-left: auto;
+        /* margin-top: -2vw; */
+        /* margin-left: auto; */
         margin-right: auto;
+
+    }
+
+.book_button_back, .book_button_back:hover{
+        background-size: 13vw 5vw;
+        z-index: 1;
+        display: block;
+        margin-top:  auto;
+        margin-bottom: auto;
+        /* margin-top: -2vw; */
+        margin-left: auto;
+        /* margin-right: auto; */
 
     }
 
@@ -689,6 +731,8 @@ button:hover + .character_sprite{
     flex-direction: column;
 }
 
+
+
 @media only screen and (max-width: 1300px) {
 
     h1{
@@ -699,15 +743,17 @@ button:hover + .character_sprite{
 
 
     h2{
-        text-indent: 0em;
-        font-size: 14vw;
+        /* text-indent: 0em; */
+        /* font-size: 14vw; */
         letter-spacing: .4vw;
         padding-bottom: 2vw;
+        margin-top: 0px;
+
     }
 
     p{
         line-height: 5vw;
-        font-size: 4vw;
+        /* font-size: 4vw; */
     }
 
     ul, li{
@@ -758,15 +804,17 @@ button:hover + .character_sprite{
     .innerDIV{
         display: flex;
         flex-direction: column;
-        /* align-items: baseline; */
-        justify-content: center;
+        align-items: center;
+        justify-content: space-between;
 
+        margin-left: 0px;
+        margin-right: 0px;
     }
 
     .index_about, .index_grimoire, .index_download, .index_about::after{
         width:60vw;
         height:17vw;
-        font-size: 10vw;
+        font-size: 40px;
     }
 
     .about_slideControls{
@@ -815,6 +863,41 @@ button:hover + .character_sprite{
         padding-right: 10vw;
     }
 
+    .grimoire_words{
+        order:2;
+        margin-left: 30px;
+        margin-right: 30px;
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-bottom: 240px;
+
+    }
+
+    .grimoire_picture{
+        order:1;
+
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+}
+
+
+@media only screen and (max-width: 600px){
+
+    h2{
+        text-indent: 0em;
+        font-size: 14vw;
+        letter-spacing: .4vw;
+        padding-bottom: 2vw;
+    }
+
+    p{
+        line-height: 5vw;
+        font-size: 4vw;
+    }
 }
 
 .monster_eyes{
