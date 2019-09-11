@@ -1,45 +1,19 @@
 import React from 'react'
 // import { NavLink } from 'react-router-dom';
+import AboutSlide from './AboutSlide'
 
 
 function About() {
   return (
-    <div classNameName="About">
+    <div className="About">
 
         <a className="back_button"href="/">
             <button className="back_button_img" type="button" name="back" title="Back" alt="logo"></button>
         </a>
         <h2>About</h2>
         <h4>"Wicka" is a 3rd person action-adventure game made with the Unreal Engine.</h4>
-
-        <div className="about_slides_container">
-                <div className="about_slideshow fade">
-                    <div className="about_mySlides fade">
-                        <img className="about_screenshot" src="/media/imgs/_wicka1.png" alt=""/>
-                    </div>
-                    <div className="about_mySlides fade">
-                        <img className="about_screenshot" src="media/imgs/_freeze_ray1.png" alt=""/>
-                    </div>
-                    <div className="about_mySlides fade">
-                        <img className="about_screenshot" src="/media/imgs/_freeze_ray5.png" alt=""/>
-                    </div>
-                    <div className="about_mySlides fade">
-                        <img className="about_screenshot" src="/media/imgs/_immolate1.png" alt=""/>
-                    </div>
-                    <div className="about_mySlides fade">
-                        <img className="about_screenshot" src="/media/imgs/_freeze_ray4.png" alt=""/>
-                    </div>
-                    <div className="about_mySlides fade">
-                        <img className="about_screenshot" src="/media/imgs/_telekinesis1.png" alt=""/>
-                    </div>
-                    <div className="about_mySlides fade">
-                        <img className="about_screenshot" src="/media/imgs/_wicka2.png" alt=""/>
-                    </div>
-                    <div className="about_mySlides fade">
-                        <img className="about_screenshot" src="/media/imgs/_wicka3.png" alt=""/>
-                    </div>
-                </div>
-        </div>
+        
+        <AboutSlide />
 
         <ul>
             <li>Play as the immortal, wax witch, Wicka.</li>
