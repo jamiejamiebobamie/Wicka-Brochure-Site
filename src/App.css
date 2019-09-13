@@ -2,6 +2,16 @@
   text-align: center;
 }
 
+.toggleDropdownMenu{
+    width: 150px;
+    height: 100px;
+    opacity: .5;
+}
+
+.toggleDropdownMenu:hover{
+    transform: scale(1.1);
+}
+
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
@@ -21,6 +31,10 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.bulletPoints{
+
 }
 
 @keyframes App-logo-spin {
@@ -89,6 +103,8 @@ html, body {
     /* padding: 130px; */
     /* z-index: 1; */
     /* display: block; */
+    display: flex;
+    align-self: center;
     margin-top:  10px;
     /* margin-bottom: -10; */
     margin-left: 20px;
@@ -645,6 +661,9 @@ h3{
     opacity: .7;
     background-color: black;
     margin-bottom: 0px;
+    max-height: 300px;
+    height: 20vw;
+    min-height: 230px;
 }
 
 button:hover + .character_sprite{
@@ -902,6 +921,7 @@ button:hover + .character_sprite{
 
     .index_buttons{
         flex-wrap: wrap;
+        flex-direction: column;
         /* margin-left: 100px;
         margin-right:100px; */
         margin-left: 0px;
@@ -962,11 +982,18 @@ button:hover + .character_sprite{
         order:1;
 
     }
+    .toggleDropdownMenu{
+        margin-left: 2.5%;
+    }
 
 }
 
 
 @media only screen and (max-width: 600px){
+
+    .toggleDropdownMenu{
+        margin-left: 10px;
+    }
 
     h2{
         text-indent: 0em;

@@ -32,16 +32,30 @@ class About extends Component {
                   <h4>Made with the Unreal Engine.</h4>
                 </div>
 
-                  <AboutSlide aboutSlideIndex={this.state.aboutSlideIndex} />
+                <div className="about_slides_container">
+                            <img className="about_screenshot" src={data[0]} alt=""/>
                 </div>
-              <ul>
-                  <li>Play as the immortal, wax witch, Wicka.</li>
-                  <li>Slay monsters.</li>
-                  <li>Collect spell books and gain new abilities.</li>
-                  <li>Exit the tomb and find the answers you seek!</li>
-              </ul>
+                </div>
+
+                <div className="aboutWordsAndSlide">
+                <div className="about_slides_container">
+                            <img className="about_screenshot" src={data[3]} alt=""/>
+                </div>
+                <div className="aboutWords">
+                <ul className="bulletPoints">
+                    <li>Play as the immortal, wax witch, Wicka.</li>
+                    <li>Slay monsters.</li>
+                    <li>Collect spell books and gain new abilities.</li>
+                    <li>Exit the tomb and find the answers you seek!</li>
+                </ul>
+                </div>
+
+
+                </div>
+
 
               <h4>Who has awoken Wicka and for what purpose?</h4>
+              <AboutSlide aboutSlideIndex={this.state.aboutSlideIndex} />
 
           </div>
 
