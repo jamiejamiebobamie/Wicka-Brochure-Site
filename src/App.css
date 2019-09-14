@@ -661,7 +661,7 @@ h3{
     opacity: .7;
     background-color: black;
     margin-bottom: 0px;
-    max-height: 300px;
+    max-height: 270px;
     height: 20vw;
     min-height: 230px;
 }
@@ -696,10 +696,13 @@ button:hover + .character_sprite{
     }
 
     .book_button_back{
-        background: url('/media/imgs/icon_arrow4.png') left center;
+        /* background: url('/media/imgs/icon_arrow4.png') left center; */
+        background: url('/media/imgs/cycle_GrimoirePages_button.png') left center;
+
         -webkit-transform: rotate(180deg);
         transform: rotate(180deg);
         background-repeat: no-repeat;
+        opacity: 0.7;
     }
 
     .book_button_back:hover{
@@ -707,11 +710,17 @@ button:hover + .character_sprite{
         -webkit-transform: rotate(180deg);
         transform: rotate(180deg);
         background-repeat: no-repeat;
+
     }
 
     .book_button_forward{
-        background: url('/media/imgs/icon_arrow4.png') left center;
+        background: url('/media/imgs/cycle_GrimoirePages_button.png') left center;
+        /* background: url('/media/imgs/icon_arrow4.png') left center; */
+
+        /* cycle_GrimoirePages_button */
         background-repeat: no-repeat;
+        opacity: 0.7;
+
     }
 
     .book_button_forward:hover{
@@ -720,7 +729,9 @@ button:hover + .character_sprite{
     }
 
     .book_button_forward, .book_button_forward:hover{
-        background-size: 13vw 5vw;
+        /* background-size: 13vw 5vw; */
+
+        background-size: 7vw 5vw;
         z-index: 1;
         display: block;
         margin-top:  auto;
@@ -734,7 +745,9 @@ button:hover + .character_sprite{
     }
 
 .book_button_back, .book_button_back:hover{
-        background-size: 13vw 5vw;
+    /* background-size: 13vw 5vw; */
+
+        background-size: 7vw 5vw;
         z-index: 1;
         display: block;
         margin-top:  auto;
@@ -928,8 +941,11 @@ button:hover + .character_sprite{
         padding-left: 0px;
         padding-right: 0px;
         margin-right: 0px;
-        margin-top: 0px;
+        margin-top: 10px;
         /* max-width: 700px; */
+        margin-bottom: -100px;
+        /* BE CAREFUL WITH NEGATIVE HEIGHTHS!!! */
+
     }
 
     .aboutWordsAndSlide{
@@ -992,7 +1008,7 @@ button:hover + .character_sprite{
 @media only screen and (max-width: 600px){
 
     .toggleDropdownMenu{
-        margin-left: 10px;
+        margin-left: 15px;
     }
 
     h2{
