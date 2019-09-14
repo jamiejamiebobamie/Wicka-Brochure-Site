@@ -1,7 +1,7 @@
 const data = [
     {
     title:"Wicka",
-    description:'Wicka is an immortal witch who is made of wax.',
+    description:'Wicka is an immortal, wax witch who has recently been awoken from her centuries long slumber by unknown parties.',
     img:"media/gifs/whip_wand2.gif",
     width: 505,
     height: 338,
@@ -11,7 +11,7 @@ const data = [
         },
     {
     title:"Health and Mana",
-    description:'Wicka uses both mana and health to power her spells.',
+    description:'Her spells are powered by both mana and health. Though mana cannot exceed Wicka\'s health, mana replenish on its own.',
     img:"media/gifs/mana_health_bar2.gif",
     width: '70%',
     height: '10%',
@@ -21,7 +21,7 @@ const data = [
         },
     {
     title:"Enchanted Candles",
-    description:'The candles in the air replenish Wicka\'s health.',
+    description:'If she can touch them, Wicka can melt and assimilate the candles in the air into her body to replenish her health.',
     img:"media/gifs/telekinesis_brick_riding2.gif",
     width: 600,
     height: 338,
@@ -31,7 +31,7 @@ const data = [
         },
     {
     title:"Wicka's Flame",
-    description:'The flame on Wicka\'s head acts like a target lock-on.',
+    description:'The flame on Wicka\'s head acts like a target lock-on, illuminating the closest enemy.',
     img:"media/gifs/melt_self1.gif",
     width: 600,
     height: 338,
@@ -41,7 +41,7 @@ const data = [
         },
     {
     title:"Whip Wand",
-    description:'Whip Wand turns Wicka\'s wand into a whip.',
+    description:'Whip Wand turns Wicka\'s wand into a whip. It requires no mana or health to cast.',
     img:"media/gifs/whip_wand1.gif",
     width: 600,
     height: 338,
@@ -51,7 +51,7 @@ const data = [
         },
     {
     title:"Spellbooks",
-    description:'Monsters drop spellbooks that give Wicka a new ability.',
+    description:'Some monsters drop spellbooks that give Wicka new abilities.',
     img:"media/gifs/spell_book_pickups.gif",
     width: 600,
     height: 338,
@@ -61,7 +61,7 @@ const data = [
         },
     {
     title:"Melt",
-    description:'As molten wax, Wicka can sink below the stone floor.',
+    description:'As molten wax, Wicka can sink below the stone floor to evade attacks.',
     img:"media/gifs/melt_self2.gif",
     width: 600,
     height: 338,
@@ -71,7 +71,7 @@ const data = [
         },
     {
     title:"Freeze Ray",
-    description:'Wicka can freeze enemies in their tracks, for a time.',
+    description:'Wicka can briefly freeze enemies in their tracks with Freeze Ray.',
     img:"media/gifs/freeze_ray1.gif",
     width: 600,
     height: 338,
@@ -91,7 +91,7 @@ const data = [
         },
     {
     title:"Brick-Riding",
-    description:'Using Melt then Telekinesis lets Wicka to take to the skies!',
+    description:'Using Melt then Telekinesis allows Wicka to take to the skies!',
     img:"media/gifs/telekinesis_brick_riding.gif",
     width: 600,
     height: 338,
@@ -101,7 +101,7 @@ const data = [
         },
     {
     title:"Immolate",
-    description:'Immolate turns Wicka\'s flame into a raging inferno.',
+    description:'Immolate turns Wicka\'s flame into a raging inferno!',
     img:"media/gifs/immolate.gif",
     width: 600,
     height: 338,
@@ -111,7 +111,7 @@ const data = [
         },
     {
     title:"Melt Ice",
-    description:'Wicka can use Immolate to free bricks that she has frozen.',
+    description:'Bricks that have been frozen by Freeze Ray cannot be lifted by Telekinesis. Wicka can use Immolate to free them.',
     img:"media/gifs/immolate_melt_ice.gif",
     width: 600,
     height: 338,
@@ -131,7 +131,7 @@ const data = [
         },
     {
     title:"Monsters",
-    description:'Monsters are the spellcaster\'s demons made real by her magic.',
+    description:'Some say monsters are manifestations of the spellcaster\'s own demons made real by her magic.',
     img:"media/gifs/telekinesis2.gif",
     width: 471,
     height: 337,
@@ -141,17 +141,17 @@ const data = [
         },
     {
     title:"Wax Witch",
-    description:'Other wax witches exist, but are they friend or foe?',
+    description:'Other wax witches exist and are undoubtedly behind Wicka\'s awakening.',
     img:"media/imgs/wickwoman1.png",
-    width: 400,
-    height: 500,
+    width: 330,
+    height: 400,
     style: "innerDIV",
     grim_picture: "grimoire_picture",
     grim_words: "grimoire_words"
         },
     {
     title:"The Controls",
-    description:'Unfortunately the game requires a Mac and an Xbox controller to play.',
+    description:'Unfortunately, the game requires a Mac and Xbox controller to play.',
     img:"media/imgs/wicka_controller_whiteBackground.png",
     width: 550,
     height: 390,

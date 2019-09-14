@@ -10,7 +10,7 @@ class Grimoire extends Component {
 
     constructor(props){
         super(props)
-        this.state = {pageIndex: 0}
+        this.state = {pageIndex: 0, backgroundUrl: '/media/sprites/book_rollover_black_background_CROPPED.png', animation:'openBook 3s steps(1) infinite'}
         this.lastPage = data.length
     }
 
@@ -22,6 +22,7 @@ class Grimoire extends Component {
             } else {
                 this.setState({pageIndex:0})
             }
+            this.setState({animation:'turnPageForward 3s steps(86) forwards'})
             // book.classList.add("animation_forward");
             // book.style.animationIterationCount = "1";
         } else {
@@ -31,6 +32,8 @@ class Grimoire extends Component {
                 let lastPage = this.state.pageIndex-1
                 this.setState({pageIndex:lastPage})
             }
+            this.setState({animation:'turnPageBackward 3s steps(86) forwards'})
+
             // book.classList.add("animation_backward");
         }
         // Code for Chrome, Safari and Opera
@@ -59,9 +62,28 @@ class Grimoire extends Component {
 
           <div class="navbar_sticky_bottom">
                 <div className="book">
-                    <button className="book_button_back" type="button" name="back" onClick={() => this.nextPage(false)}></button>
-                    <div className="book_sprite_anim" id="book_sprite"></div>
-                    <button className="book_button_forward" type="button" name="forward" onClick={() => this.nextPage(true)}></button>
+                    <button
+                            className="book_button_back"
+                            type="button"
+                            name="back"
+                            onClick={() => this.nextPage(false)}
+                            onAnimationEnd={() => this.setState({animation:'openBook 3s steps(1) infinite'})}
+                            webkitAnimationEnd={() => this.setState({animation:'openBook 3s steps(1) infinite'})}>
+                    </button>
+                    <div
+                        className="book_sprite_anim"
+                        id="book_sprite"
+                        style={{background:`url(${this.state.backgroundUrl}`, animation:this.state.animation}}
+                        onAnimationEnd={() => this.setState({animation:'openBook 3s steps(1) infinite'})}
+                        webkitAnimationEnd={() => this.setState({animation:'openBook 3s steps(1) infinite'})}>
+                    </div>
+                    <button className="book_button_forward"
+                        type="button"
+                        name="forward"
+                        onClick={() => this.nextPage(true)}
+                        onAnimationEnd={() => this.setState({animation:'openBook 3s steps(1) infinite'})}
+                        webkitAnimationEnd={() => this.setState({animation:'openBook 3s steps(1) infinite'})}>
+                    </button>
                 </div>
           </div>
 
@@ -71,12 +93,11 @@ class Grimoire extends Component {
         )
     }
 }
+//
+// background: url('/media/sprites/book_rollover_black_background_CROPPED.png') left center;
+// animation: openBook 3s steps(1) infinite;
 
-// <div className="book">
-//     <button className="book_button_back" type="button" name="back" onClick={() => this.nextPage(false)}></button>
-//     <div className="book_sprite_anim" id="book_sprite"></div>
-//     <button className="book_button_forward" type="button" name="forward" onClick={() => this.nextPage(true)}></button>
-// </div>
+//  style={{background:url()}}
 
 
 

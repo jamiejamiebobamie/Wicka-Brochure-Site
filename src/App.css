@@ -10,6 +10,8 @@
 
 .toggleDropdownMenu:hover{
     transform: scale(1.1);
+    opacity: .8;
+
 }
 
 .App-logo {
@@ -120,7 +122,7 @@ html, body {
     background: url('/media/sprites/logo_spritesheet_750by300_29250_38steps_60percent.png') left center;
 
     /* animation: logoAnim 4s steps(38) infinite; */
-    animation: logoAnim 4s steps(39) infinite;
+    animation: logoAnim 4s steps(38) infinite;
 
     /* transform: scale(.6); */
 }
@@ -129,7 +131,9 @@ html, body {
     /* 1 step */
   from{background-position-x:0px;}
   /* to{background-position-x:-28500px;} */
-  to{background-position-x:-17550px;}
+  to{background-position-x:-17100px;}
+
+  /* to{background-position-x:-17550px;} */
 
 }
 
@@ -726,8 +730,8 @@ button:hover + .character_sprite{
     margin-right: auto;
     width: 300px;
     height: 230px;
-    background: url('/media/sprites/book_rollover_black_background_CROPPED.png') left center;
-    animation: openBook 3s steps(1) infinite;
+    /* background: url('/media/sprites/book_rollover_black_background_CROPPED.png') left center; */
+    /* animation: openBook 3s steps(1) infinite; */
 }
 
 .book_sprite, .book_button_1, .book_button_2{
@@ -742,20 +746,22 @@ button:hover + .character_sprite{
     }
 
     .book_button_back{
-        /* background: url('/media/imgs/icon_arrow4.png') left center; */
         background: url('/media/imgs/cycle_GrimoirePages_button.png') left center;
 
         -webkit-transform: rotate(180deg);
         transform: rotate(180deg);
         background-repeat: no-repeat;
-        opacity: 0.7;
+        opacity: 0.6;
     }
 
     .book_button_back:hover{
-        background: url('/media/imgs/icon_arrow4Hover.png') left center;
+        background: url('/media/imgs/cycle_GrimoirePages_button.png') left center;
         -webkit-transform: rotate(180deg);
-        transform: rotate(180deg);
+        transform: rotate(180deg) scale(1.1);
         background-repeat: no-repeat;
+        /* transform: scale(1.1); */
+        /* margin-right: -2vw; */
+        opacity: 1;
 
     }
 
@@ -765,13 +771,17 @@ button:hover + .character_sprite{
 
         /* cycle_GrimoirePages_button */
         background-repeat: no-repeat;
-        opacity: 0.7;
+        opacity: 0.6;
 
     }
 
     .book_button_forward:hover{
-        background: url('/media/imgs/icon_arrow4Hover.png') left center;
-        background-repeat: no-repeat;
+        /* background: url('/media/imgs/icon_arrow4Hover.png') left center;
+        background-repeat: no-repeat; */
+        transform: scale(1.1);
+        opacity: 1;
+        /* margin-left: -2vw; */
+
     }
 
     .book_button_forward, .book_button_forward:hover{
@@ -810,6 +820,35 @@ button:hover + .character_sprite{
         }
 
 
+/* .animation_open{
+    animation: openBook 3s steps(1) infinite;
+}
+
+.animation_forward{
+    animation: turnPageForward 3s steps(86) forwards;
+}
+
+.animation_backward{
+    animation: turnPageBackward 3s steps(86) forwards;
+} */
+
+
+
+
+
+
+.animation_open, .animation_forward, .animation_backward{
+    z-index: 1;
+    display: block;
+    margin-top:  auto;
+    /* margin-bottom: auto; */
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    height: 230px;
+}
+
+
 .animation_open{
     animation: openBook 3s steps(1) infinite;
 }
@@ -821,6 +860,8 @@ button:hover + .character_sprite{
 .animation_backward{
     animation: turnPageBackward 3s steps(86) forwards;
 }
+
+
 
 @keyframes openBook{
     /* 1 step */
@@ -898,9 +939,9 @@ button:hover + .character_sprite{
     }
 
     .book_button_forward, .book_button_forward:hover, .book_button_back, .book_button_back:hover{
-        background-size: 16.5vw 7vw;
-        margin-top: auto;
-        /* background-color: purple; */
+        /* background-size: 7vw 5vw; */
+        background-size: 11vw 7vw;
+        /* margin-top: auto; */
     }
 
     .back_button{
@@ -1078,13 +1119,13 @@ button:hover + .character_sprite{
     }
 
     .logo_sprite{
-        margin-left: -5px;
+        margin-left: 15px;
         /* width: 100%; */
 
     }
     .index_buttons{
         /* background-color: pink; */
-        margin-left: 0px;
+        margin-left: -15px;
         padding-left: 0px;
         padding-right: 0px;
         margin-right: 0px;
@@ -1094,6 +1135,19 @@ button:hover + .character_sprite{
         /* width: -40%; */
         margin-left: -40.65vw;
         /* overflow: hidden; */
+    }
+
+    .book_button_back:hover{
+        margin-right: 0vw;
+    }
+    .book_button_forward:hover{
+        margin-left: 0vw;
+    }
+
+    .book_button_forward, .book_button_forward:hover, .book_button_back, .book_button_back:hover{
+        /* background-size: 7vw 5vw; */
+        background-size: 14vw 10vw;
+        /* margin-top: auto; */
     }
 
 

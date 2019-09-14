@@ -39,7 +39,7 @@ class About extends Component {
 
                 <div className="aboutWordsAndSlide">
                 <div className="about_slides_container">
-                            <img className="about_screenshot" src={data[3]} alt=""/>
+                            <img className="about_screenshot" src={data[4]} alt=""/>
                 </div>
                 <div className="aboutWords">
                 <ul className="bulletPoints">
