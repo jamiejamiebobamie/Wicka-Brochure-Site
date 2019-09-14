@@ -8,6 +8,17 @@ function Homepage(props) {
     <div className="Homepage">
         <NavBar width={props.width} />
         <MonsterEyes width={props.width} height={props.height} />
+        <MonsterEyes width={props.width} height={props.height} />
+        <MonsterEyes width={props.width} height={props.height} />
+        <MonsterEyes width={props.width} height={props.height} />
+        <MonsterEyes width={props.width} height={props.height} />
+
+        <MonsterEyes width={props.width} height={props.height} />
+        <MonsterEyes width={props.width} height={props.height} />
+        <MonsterEyes width={props.width} height={props.height} />
+        <MonsterEyes width={props.width} height={props.height} />
+        <MonsterEyes width={props.width} height={props.height} />
+
         <div class="character">
             <div className="character_sprite"/>
         </div>
