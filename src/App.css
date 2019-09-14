@@ -278,7 +278,7 @@ html, body {
 }
 
 
-.monster{
+/* .monster{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -288,7 +288,7 @@ html, body {
     margin: 1vw;
     transform: translateY(5px) 4s infinite alternate-reverse;
     background-color: orange;
-}
+} */
 
 .monster_pack{
     margin: 1vw;
@@ -305,6 +305,27 @@ html, body {
 
 
 .monster1_sprite, .monster2_sprite, .monster3_sprite, .monster4_sprite,.monster5_sprite, .monster6_sprite, .monster7_sprite, .monster8_sprite, .monster9_sprite{
+    width: 40px;
+    height: 20px;
+    background: url('/media/sprites/monster_open_eyes_sprite4.png') left center;
+    animation: openEyes 10s steps(414) infinite alternate-reverse;
+    animation-delay: 1s;
+}
+
+.monster{
+    position: absolute;
+
+    left: 200px;
+    top: 627px;
+
+    /* display: flex;
+    flex-direction: row;
+    background-color: orange;
+    width: 100%;
+    justify-content: center; */
+}
+
+.monster_sprite{
     width: 40px;
     height: 20px;
     background: url('/media/sprites/monster_open_eyes_sprite4.png') left center;
@@ -1070,7 +1091,7 @@ button:hover + .character_sprite{
 
     .character{
         /* width: -40%; */
-        margin-left: -40.5vw;
+        margin-left: -40.65vw;
         /* overflow: hidden; */
     }
 
@@ -1093,13 +1114,7 @@ button:hover + .character_sprite{
     z-index: 0;
 }
 
-.monster1{
-    position: absolute;
-    left: 748px;
-    top: 631px;
-    /* opacity: .5; */
 
-}
 
 .monster2{
     position: absolute;

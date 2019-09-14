@@ -7,32 +7,18 @@ import NavLinks from './NavLinks'
 class NavBar extends Component {
     constructor(props){
         super(props)
-        this.state = {dropdownMenu: false, width: 0, height: 0}
+        this.state = {dropdownMenu: false}
         this.toggleMenu = this.toggleMenu.bind(this)
-        //https://stackoverflow.com/questions/36862334/get-viewport-window-height-in-reactjs
-        this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
     }
 
     toggleMenu(){
         this.setState({dropdownMenu: !this.state.dropdownMenu})
     }
 
-    componentDidMount() {
-      this.updateWindowDimensions();
-      window.addEventListener('resize', this.updateWindowDimensions);
-    }
-
-    componentWillUnmount() {
-      window.removeEventListener('resize', this.updateWindowDimensions);
-    }
-
-    updateWindowDimensions() {
-      this.setState({ width: window.innerWidth, height: window.innerHeight });
-    }
 
     render(){
         return (
-            (this.state.width>1400) ?
+            (this.props.width>1400) ?
 
             ( <div className="index_buttons">
                 <NavLink className="logo_sprite" to="/" activeClassName="hurray"></NavLink>

@@ -51,7 +51,7 @@ class Grimoire extends Component {
         return (
 
           <div className="Grimoire">
-          <NavBar />
+          <NavBar width={this.props.width}/>
 
           <div className="grimoire_slideshow-container fade">
                 <GrimoirePage pageIndex={this.state.pageIndex}/>

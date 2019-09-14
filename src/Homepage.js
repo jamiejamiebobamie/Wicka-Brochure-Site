@@ -1,11 +1,13 @@
 import React from 'react'
 import NavBar from './NavBar'
+import MonsterEyes from './MonsterEyes'
 
 
-function Homepage() {
+function Homepage(props) {
   return (
     <div className="Homepage">
-        <NavBar />
+        <NavBar width={props.width} />
+        <MonsterEyes width={props.width} height={props.height} />
         <div class="character">
             <div className="character_sprite"/>
         </div>
