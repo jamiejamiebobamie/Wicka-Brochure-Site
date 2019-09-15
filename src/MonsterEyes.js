@@ -1,10 +1,11 @@
 import React, {Component} from 'react';
+import data from './monsterEyesLocations'
 
 class MonsterEyes extends Component{
 
     constructor(props){
         super(props)
-        this.state = { left:0, top:0, random1:Math.random(), random2:Math.random()}
+        this.state = { index: Math.floor(props.number*Math.random())}
     }
 
     render(){

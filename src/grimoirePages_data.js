@@ -1,7 +1,7 @@
 const data = [
     {
     title:"Wicka",
-    description:'Wicka is an immortal, wax witch who has recently been awoken from her centuries long slumber by unknown parties.',
+    description:'Wicka is an immortal, wax witch who has been asleep for centuries.',
     img:"media/gifs/whip_wand2.gif",
     width: 505,
     height: 338,
@@ -21,7 +21,7 @@ const data = [
         },
     {
     title:"Enchanted Candles",
-    description:'If she can touch them, Wicka can melt and assimilate the candles in the air into her body to replenish her health.',
+    description:'If she can touch them, Wicka can assimilate candles into her body to replenish lost health.',
     img:"media/gifs/telekinesis_brick_riding2.gif",
     width: 600,
     height: 338,
@@ -60,7 +60,7 @@ const data = [
     grim_words: "grimoire_words"
         },
     {
-    title:"Melt",
+    title:"Melt Self",
     description:'As molten wax, Wicka can sink below the stone floor to evade attacks.',
     img:"media/gifs/melt_self2.gif",
     width: 600,
@@ -91,7 +91,7 @@ const data = [
         },
     {
     title:"Brick-Riding",
-    description:'Using Melt then Telekinesis allows Wicka to take to the skies!',
+    description:'Using Melt then Telekinesis allows Wicka to start walking on the magicked bricks',
     img:"media/gifs/telekinesis_brick_riding.gif",
     width: 600,
     height: 338,
@@ -111,7 +111,7 @@ const data = [
         },
     {
     title:"Melt Ice",
-    description:'Bricks that have been frozen by Freeze Ray cannot be lifted by Telekinesis. Wicka can use Immolate to free them.',
+    description:'Bricks that have been frozen by Freeze Ray cannot be lifted by Telekinesis. Use Immolate to free them.',
     img:"media/gifs/immolate_melt_ice.gif",
     width: 600,
     height: 338,
