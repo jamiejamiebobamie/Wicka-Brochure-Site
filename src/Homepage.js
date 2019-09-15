@@ -15,7 +15,7 @@ class Homepage extends Component {
           <div className="Homepage">
               <NavBar width={this.props.width} />
               <MonsterEyesContainer width={this.props.width} height={this.props.height} />
-              <div class="character">
+              <div className="character">
                   <div className="character_sprite"/>
               </div>
           </div>
