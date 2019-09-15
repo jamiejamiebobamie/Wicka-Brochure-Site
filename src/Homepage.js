@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import NavBar from './NavBar'
-import MonsterEyes from './MonsterEyes'
+import MonsterEyesContainer from './MonsterEyesContainer'
 import data from './monsterEyesLocations'
 
 
@@ -14,18 +14,7 @@ class Homepage extends Component {
         return (
           <div className="Homepage">
               <NavBar width={this.props.width} />
-              <MonsterEyes width={this.props.width} height={this.props.height} />
-              <MonsterEyes width={this.props.width} height={this.props.height} />
-              <MonsterEyes width={this.props.width} height={this.props.height} />
-              <MonsterEyes width={this.props.width} height={this.props.height} />
-              <MonsterEyes width={this.props.width} height={this.props.height} />
-
-              <MonsterEyes width={this.props.width} height={this.props.height} />
-              <MonsterEyes width={this.props.width} height={this.props.height} />
-              <MonsterEyes width={this.props.width} height={this.props.height} />
-              <MonsterEyes width={this.props.width} height={this.props.height} />
-              <MonsterEyes width={this.props.width} height={this.props.height} />
-
+              <MonsterEyesContainer width={this.props.width} height={this.props.height} />
               <div class="character">
                   <div className="character_sprite"/>
               </div>

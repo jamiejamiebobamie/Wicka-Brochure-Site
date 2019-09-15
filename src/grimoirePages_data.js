@@ -21,7 +21,7 @@ const data = [
         },
     {
     title:"Enchanted Candles",
-    description:'If she can touch them, Wicka can assimilate candles into her body to replenish lost health.',
+    description:'If she can touch them, Wicka can assimilate the floating candles into her body to replenish lost health.',
     img:"media/gifs/telekinesis_brick_riding2.gif",
     width: 600,
     height: 338,

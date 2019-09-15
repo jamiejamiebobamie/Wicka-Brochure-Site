@@ -1,20 +1,40 @@
 import React, {Component} from 'react';
-import data from './monsterEyesLocations'
+
 
 class MonsterEyes extends Component{
-
     constructor(props){
         super(props)
-        this.state = { index: Math.floor(props.number*Math.random())}
+        this.state = {animation: 'eyesOpened 1s steps(1) infinite alternate-reverse', blinking: false, random: 0}
+        this.randomBlink = this.randomBlink.bind(this)
     }
 
-    render(){
-        return (
-            <div className="monster"  style={{left:(this.props.width/2.7)+((this.props.width/5)*this.state.random1), top:(this.props.height-400)*this.state.random2+400}} >
-                <div className="monster_sprite"></div>
-            </div>
-        )
+    randomBlink(){
+            this.setState({random: Math.random()})
+            if (this.state.blinking){
+                this.setState( {animation: 'eyesOpened 1s steps(1) infinite alternate-reverse', blinking: false} )
+            } else {
+                if (this.state.random > .5){
+                    this.setState( {animation: 'openEyes 1s steps(30) infinite alternate', blinking: true} )
+                }
+            }
     }
+        // setTimeout(this.randomBlink,2000)
+
+render(){
+
+    return(
+        <div className="monster"
+             style={{
+                 position:'absolute',
+                 left:this.props.left,
+                 top:this.props.top,
+                }}>
+            <div className="monster_sprite" style={{
+                animation:this.state.animation
+            }}></div>
+        </div>
+    );
+}
 
 }
 

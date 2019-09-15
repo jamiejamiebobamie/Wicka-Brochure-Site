@@ -1,6 +1,10 @@
 
 const data = [
     {
+        left: '748px',
+        top: '631px',
+    },
+    {
         left: '818px',
         top: '619px',
     },
