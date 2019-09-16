@@ -1,40 +1,40 @@
 
 const data = [
     {
-        left: '748px',
-        top: '631px',
+        left: 748,
+        top: 631,
     },
     {
-        left: '818px',
-        top: '619px',
+        left: 818,
+        top: 619,
     },
     {
-        left: '865px',
-        top: '638px',
+        left: 865,
+        top: 638,
     },
     {
-        left: '898px',
-        top: '604px',
+        left: 898,
+        top: 604,
     },
     {
-        left: '944px',
-        top: '648px',
+        left: 944,
+        top: 648,
     },
     {
-        left: '1020px',
-        top: '634px',
+        left: 1020,
+        top: 634,
     },
     {
-        left: '1140px',
-        top: '627px',
+        left: 1140,
+        top: 627,
     },
     {
-        left: '1067px',
-        top: '613px',
+        left: 1067,
+        top: 613,
     },
     {
-        left: '981px',
-        top: '606px',
+        left: 981,
+        top: 606,
     }
 ]
 

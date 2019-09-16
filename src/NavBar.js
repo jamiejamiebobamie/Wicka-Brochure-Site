@@ -7,7 +7,7 @@ import NavLinks from './NavLinks'
 class NavBar extends Component {
     constructor(props){
         super(props)
-        this.state = {dropdownMenu: false}
+        this.state = {dropdownMenu: this.props.dropdownMenu}
         this.toggleMenu = this.toggleMenu.bind(this)
     }
 

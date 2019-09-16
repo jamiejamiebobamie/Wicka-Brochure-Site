@@ -95,6 +95,8 @@ html, body {
     bottom: 0;
 }
 
+
+
 .index_buttons{
     display: flex;
     justify-content: space-evenly;
@@ -275,23 +277,21 @@ html, body {
     transform: scale(.75);
 }
 
+/* I NEED A SMOOTH TRANSITION RULE TO FIX THIS... */
+/*
+
 @media only screen and (max-width:950px){
     .character{
-        /* width: -40%; */
         margin-left: -1.5vw;
-        /* overflow: hidden; */
     }
 }
 
-/* I NEED A SMOOTH TRANSITION RULE TO FIX THIS... */
 
 @media only screen and (max-width:850px){
     .character{
-        /* width: -40%; */
         margin-left: -6vw;
-        /* overflow: hidden; */
     }
-}
+} */
 
 
 @keyframes idle{
@@ -1189,8 +1189,23 @@ button:hover + .character_sprite{
 
     .character{
         /* width: -40%; */
-        margin-left: -40.65vw;
+        /* margin-left: -40.65vw; */
         /* overflow: hidden; */
+    }
+
+    .character_sprite{
+            margin-left: -40.65vw;
+    }
+
+    .MonsterEyesContainer{
+        /* margin-left: 10000.65vw; */
+
+        /* display: flex;
+        justify-content: center;
+        align-self: center;
+        align-items: center;
+        align-content: center; */
+        /* margin-left: -140.65vw; */
     }
 
     .book_button_back:hover{

@@ -37,7 +37,7 @@ render(){
       <Router>
           <div className="App">
               <Route exact path="/"
-              render={props => <Homepage width={this.state.width} height={this.state.height} />}
+              render={props => <Homepage update={this.updateWindowDimensions} width={this.state.width} height={this.state.height} />}
                />
               <Route path="/about" component={About} />
               <Route path="/grimoire"

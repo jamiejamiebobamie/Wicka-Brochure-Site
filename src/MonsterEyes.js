@@ -12,6 +12,10 @@ class MonsterEyes extends Component{
 
     }
 
+    componentDidMount() {
+      this.props.update();
+    }
+
     // randomBlink(){
     //         this.setState({random: Math.random()})
     //         if (this.state.blinking){
@@ -42,8 +46,8 @@ render() {
         <div className="monster"
              style={{
                  position:'absolute',
-                 left:this.props.left,
-                 top:this.props.top,
+                 left:this.props.width/2+this.props.left,
+                 top:this.props.height/2+this.props.top,
                 }}>
             <div className="monster_sprite" style={{
                 animation:this.state.animation

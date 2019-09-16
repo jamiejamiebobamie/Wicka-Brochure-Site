@@ -13,11 +13,20 @@ class Homepage extends Component {
     render(){
         return (
           <div className="Homepage">
-              <NavBar width={this.props.width} />
-              <MonsterEyesContainer width={this.props.width} height={this.props.height} />
+              <NavBar dropdownMenu={true} width={this.props.width} />
+              {this.props.height > 960
+
+              ?
+
               <div className="character">
+                  <MonsterEyesContainer update={this.props.update} width={this.props.width} height={this.props.height} />
                   <div className="character_sprite"/>
               </div>
+
+              :
+
+              ""}
+
           </div>
 
         )
