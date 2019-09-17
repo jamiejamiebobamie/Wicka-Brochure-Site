@@ -8,24 +8,35 @@ import data from './monsterEyesLocations'
 class Homepage extends Component {
     constructor(props){
         super(props)
-        this.state={number:data.length-1}
+        this.state={number:data.length-1, storedState: true}
+        this.toggleNavbar = this.toggleNavbar.bind(this)
     }
+
+    toggleNavbar(state){
+        this.setState({storedState: !this.state.storedState})
+        console.log(this.storedState)
+    }
+
     render(){
+        console.log(this.props.height < 960, this.state.dropdownMenu==true, this.props.width < 1400)
         return (
           <div className="Homepage">
-              <NavBar dropdownMenu={true} width={this.props.width} />
-              {this.props.height > 960
+              <NavBar dropdownMenu={true} width={this.props.width} liftState={this.toggleNavbar} />
+              {this.props.height < 960 && this.state.storedState==true && this.props.width < 1400
 
               ?
+              
+              ""
+
+              :
 
               <div className="character">
                   <MonsterEyesContainer update={this.props.update} width={this.props.width} height={this.props.height} />
                   <div className="character_sprite"/>
               </div>
 
-              :
 
-              ""}
+          }
 
           </div>
 

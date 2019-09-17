@@ -13,6 +13,7 @@ class NavBar extends Component {
 
     toggleMenu(){
         this.setState({dropdownMenu: !this.state.dropdownMenu})
+        this.props.liftState()
     }
 
 
