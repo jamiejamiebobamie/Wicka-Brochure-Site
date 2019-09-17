@@ -10,8 +10,48 @@ const data = [
     grim_words: "grimoire_words"
         },
     {
+    title:"Wax Witch",
+    description:'Other wax witches exist and are undoubtedly behind Wicka\'s awakening.',
+    img:"media/imgs/wickwoman1.png",
+    width: 330,
+    height: 400,
+    style: "innerDIV",
+    grim_picture: "grimoire_picture",
+    grim_words: "grimoire_words"
+        },
+    {
+    title:"Monsters",
+    description:'The world is littered with monsters. Some say these monsters are manifestations of the spellcaster\'s own demons made real by her magic.',
+    img:"media/gifs/telekinesis2.gif",
+    width: 471,
+    height: 337,
+    style: "innerDIV",
+    grim_picture: "grimoire_picture",
+    grim_words: "grimoire_words"
+        },
+    {
+    title:"The Exit",
+    description:'The rectangle of light in the distance is the exit to your tomb. As Wicka, you must leave this place and find answers.',
+    img:undefined,
+    width: 560,
+    height: 600,
+    style: "innerDIV",
+    grim_picture: "door_sprite",
+    grim_words: "grimoire_words"
+        },
+    {
+    title:"The Controls",
+    description:' "Wicka" requires a Mac and Xbox controller to play.',
+    img:"media/imgs/wicka_controller_whiteBackground.png",
+    width: 550,
+    height: 390,
+    style: "innerDIV",
+    grim_picture: "grimoire_picture",
+    grim_words: "grimoire_words"
+        },
+    {
     title:"Health and Mana",
-    description:'Her spells are powered by both mana and health. Though mana cannot exceed Wicka\'s health, mana replenish on its own.',
+    description:'Being an immortal witch, Wicka uses both mana and health to power her spells. Mana cannot exceed health, but replenishes on its own.',
     img:"media/gifs/mana_health_bar2.gif",
     width: '70%',
     height: '10%',
@@ -59,6 +99,16 @@ const data = [
     grim_picture: "grimoire_picture",
     grim_words: "grimoire_words"
         },
+        {
+        title:"Cursed Grimoires",
+        description:'Some spellbooks are cursed and attack any who come too close.',
+        img:"media/gifs/book1.gif",
+        width: 600,
+        height: 338,
+        style: "innerDIV",
+        grim_picture: "grimoire_picture",
+        grim_words: "grimoire_words"
+            },
     {
     title:"Melt Self",
     description:'As molten wax, Wicka can sink below the stone floor to evade attacks.',
@@ -119,47 +169,17 @@ const data = [
     grim_picture: "grimoire_picture",
     grim_words: "grimoire_words"
         },
+
     {
-    title:"Cursed Grimoires",
-    description:'Some spellbooks are cursed and attack any who come too close.',
-    img:"media/gifs/book1.gif",
+    title:"Download the Game",
+    description:'Go to the \'Download and Play!\' section to download the game.',
+    img:"media/imgs/immolate2.png",
     width: 600,
     height: 338,
     style: "innerDIV",
     grim_picture: "grimoire_picture",
     grim_words: "grimoire_words"
         },
-    {
-    title:"Monsters",
-    description:'Some say monsters are manifestations of the spellcaster\'s own demons made real by her magic.',
-    img:"media/gifs/telekinesis2.gif",
-    width: 471,
-    height: 337,
-    style: "innerDIV",
-    grim_picture: "grimoire_picture",
-    grim_words: "grimoire_words"
-        },
-    {
-    title:"Wax Witch",
-    description:'Other wax witches exist and are undoubtedly behind Wicka\'s awakening.',
-    img:"media/imgs/wickwoman1.png",
-    width: 330,
-    height: 400,
-    style: "innerDIV",
-    grim_picture: "grimoire_picture",
-    grim_words: "grimoire_words"
-        },
-    {
-    title:"The Controls",
-    description:'Unfortunately, the game requires a Mac and Xbox controller to play.',
-    img:"media/imgs/wicka_controller_whiteBackground.png",
-    width: 550,
-    height: 390,
-    style: "innerDIV",
-    grim_picture: "grimoire_picture",
-    grim_words: "grimoire_words"
-        },
-
 ]
 
 export default data

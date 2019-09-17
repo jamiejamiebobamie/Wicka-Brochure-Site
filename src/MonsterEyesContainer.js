@@ -37,7 +37,6 @@ class MonsterEyesContainer extends Component{
         console.log(data.length)
         return (
             <div className="MonsterEyesContainer">
-            <MonsterEyes update={this.props.update} width={this.props.width} height={this.props.height*(.1/400)} left={this.coords[1][2]} top={this.coords[1][1]-20} />
             <MonsterEyes update={this.props.update} width={this.props.width} height={this.props.height*(.1/400)} left={this.coords[2][2]} top={this.coords[2][1]-20} />
             <MonsterEyes update={this.props.update} width={this.props.width} height={this.props.height*(.1/400)} left={this.coords[3][2]} top={this.coords[3][1]-20} />
             <MonsterEyes update={this.props.update} width={this.props.width} height={this.props.height*(.1/400)} left={this.coords[4][2]} top={this.coords[4][1]-20} />
@@ -50,6 +49,8 @@ class MonsterEyesContainer extends Component{
     }
 
 }
+// <MonsterEyes update={this.props.update} width={this.props.width} height={this.props.height*(.1/400)} left={this.coords[1][2]} top={this.coords[1][1]-20} />
+
 
 // <MonsterEyes update={this.props.update} width={this.props.width} height={this.props.height} left={this.coords[7][2]} top={this.coords[7][1]-500} />
 //
