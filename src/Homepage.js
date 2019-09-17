@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import NavBar from './NavBar'
+import NavBar from './NavBarHomepage'
 import MonsterEyesContainer from './MonsterEyesContainer'
 import data from './monsterEyesLocations'
 
@@ -18,14 +18,14 @@ class Homepage extends Component {
     }
 
     render(){
-        console.log(this.props.height < 960, this.state.dropdownMenu==true, this.props.width < 1400)
+        console.log(this.props.height < 960, this.state.dropdownMenu===true, this.props.width < 1400)
         return (
           <div className="Homepage">
               <NavBar dropdownMenu={true} width={this.props.width} liftState={this.toggleNavbar} />
-              {this.props.height < 960 && this.state.storedState==true && this.props.width < 1400
+              {this.props.height < 960 && this.state.storedState===true && this.props.width < 1400
 
               ?
-              
+
               ""
 
               :
