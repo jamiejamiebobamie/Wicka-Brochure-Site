@@ -256,7 +256,7 @@ html, body {
 .door_sprite{
     margin-top: -100px;
     /* margin-left: 0px; */
-    margin-bottom: -100px;
+    margin-bottom: -180px;
     /* transform: scale(.5); */
     /* display: block; */
     /* margin-left: auto; */
