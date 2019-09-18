@@ -266,8 +266,6 @@ img:not([src]) {
     transform: scale(.75);
 }
 
-
-
 .monster1_sprite, .monster2_sprite, .monster3_sprite, .monster4_sprite,.monster5_sprite, .monster6_sprite, .monster7_sprite, .monster8_sprite, .monster9_sprite{
     width: 40px;
     height: 20px;
@@ -317,17 +315,18 @@ img:not([src]) {
 }
 
 .downloadInstructions{
-    margin-top: 100px;
-    margin-bottom: 100px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 .downloadWords{
     margin-left: 300px;
     margin-right: 300px;
     margin-top: 100px;
-    margin-bottom: 1-0px;
+    margin-bottom: 100px;
 }
 
 .downloadImage{
@@ -341,117 +340,49 @@ img:not([src]) {
     margin-bottom: 0px;
 }
 
-.about_slideControls_container{
-    margin: auto;
-    width: 50%;
-}
-
 .About{
     display: flex;
     flex-direction: column;
-    margin-bottom: 100px;
+    /* margin-bottom: 100px; */
 }
 
-.about_slideControls{
-    margin-left: -8vw;
-    display: flex;
-}
-
-.about_mySlides{
-    margin-bottom: 100px;
-}
-
-.about_slides_container{
-    padding-left: 0px;
-}
-
-.about_screenshot{
-    width: 100%;
-    height:750px;
-    object-fit: contain;
-}
-
-.finalLineAbout{
-    display: flex;
-
-    flex-direction: column;
-        margin-bottom: 100px;
-}
 
 .aboutWordsAndSlide{
     display: flex;
     margin-left: 70px;
     margin-right: 70px;
-    margin-bottom: 100px;
     flex-basis: center;
+    margin-top: 100px;
+
 }
 
 .aboutWords{
     display: flex;
     flex-direction: column;
-    margin-top: 150px;
-    width: 200%;
-    margin-right: 75px;
+    margin-top: 75px;
+    /* width: 200%; */
+    margin-right: 150px;
+    margin-left: 150px;
     text-align: left;
 }
 
-.about_button_back{
-    background: url('/media/imgs/icon_arrow4.png') left center;
-    -webkit-transform: rotate(180deg);
-    transform: rotate(180deg);
-    background-repeat: no-repeat;
+.about_screenshot{
+    /* width: 100%; */
+    height:400px;
+    object-fit: contain;
 }
 
-.about_button_back:hover{
-    background: url('/media/imgs/icon_arrow4Hover.png') left center;
-    -webkit-transform: rotate(180deg);
-    transform: rotate(180deg);
-    background-repeat: no-repeat;
-}
 
-.about_button_forward{
-    background: url('/media/imgs/icon_arrow4.png') left center;
-    background-repeat: no-repeat;
-}
-
-.about_button_forward:hover{
-    background: url('/media/imgs/icon_arrow4Hover.png') left center;
-    background-repeat: no-repeat;
-}
-
-.about_button_forward, .about_button_forward:hover, .about_button_back, .about_button_back:hover{
-    background-size: 13vw 5vw;
-    z-index: 1;
-}
-
-.return{
-    float: right;
-    z-index: 5;
+.finalLineAbout{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 150px;
 }
 
 .download_instructions{
     margin-top: 100px;
     margin-right:7vw;
     margin-left:7vw;
-}
-
-.download{
-    display: block;
-    margin-top: 3vw;
-    margin-bottom: 3vw;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.download_instructions{
-    display: block;
-    margin-top: 2vw;
-    margin-bottom: 2vw;
-    margin-left: auto;
-    margin-right: auto;
-    padding:2vw;
-    z-index:0;
-    background-image: url('/media/imgs/backButtonHover.png') left center;
 }
 
 .test_gif{
@@ -494,24 +425,6 @@ h4{
     letter-spacing: .4vw;
     line-height: 3vw;
     margin-bottom: 2vw;
-}
-
-.aboutWordsAndSlide{
-    display: flex;
-    margin-left: 70px;
-    margin-right: 70px;
-    flex-basis: center;
-
-
-}
-
-.aboutWords{
-    display: flex;
-    flex-direction: column;
-    margin-top: 150px;
-    width: 200%;
-    margin-right: 75px;
-    text-align: left;
 }
 
 ul{
@@ -709,7 +622,6 @@ button:hover + .character_sprite{
         max-height: 100px;
     }
 
-
 .animation_open, .animation_forward, .animation_backward{
     z-index: 1;
     display: block;
@@ -719,7 +631,6 @@ button:hover + .character_sprite{
     width: 300px;
     height: 230px;
 }
-
 
 .animation_open{
     animation: openBook 3s steps(1) infinite;
@@ -732,8 +643,6 @@ button:hover + .character_sprite{
 .animation_backward{
     animation: turnPageBackward 3s steps(86) forwards;
 }
-
-
 
 @keyframes openBook{
     /* 1 step */
@@ -764,8 +673,6 @@ button:hover + .character_sprite{
     flex-direction: column;
 
 }
-
-
 
 @media only screen and (max-width: 1400px) {
 
@@ -847,32 +754,11 @@ button:hover + .character_sprite{
         margin-top: 15px;
     }
 
-    .about_slideControls{
-        margin-left: 4vw;
-    }
-
-    .about_mySlides{
-        margin-bottom: 100px;
-    }
-
-    .about_slides_container{
-        margin-bottom: 30px;
-    }
-
-    .about_screenshot{
-        width: 100%;
-        height:531.25px;
-    }
-
     .download_instructions{
         padding: 0vw;
         width:800px;
         height:531.25px;
         object-fit: contain;
-    }
-
-    .about_button_forward, .about_button_forward:hover, .about_button_back, .about_button_back:hover{
-        background-size: 16.5vw 7vw;
     }
 
     .candle_sprite_test{
@@ -891,9 +777,60 @@ button:hover + .character_sprite{
         /* BE CAREFUL WITH NEGATIVE HEIGHTHS!!! */
     }
 
-    .aboutWordsAndSlide{
-        flex-direction: column;
+    .About{
+        margin-left: 0px;
+        margin-right: 0px;
+
     }
+
+    .aboutWordsAndSlide{
+        display: flex;
+        flex-direction: column;
+        /* margin-left: 70px; */
+        /* margin-right: 70px; */
+        justify-content: center;
+        /* flex-basis: center; */
+        /* width: 100% */
+
+    }
+
+    .aboutWords{
+        display: flex;
+        flex-direction: column;
+        /* margin-top: 75px; */
+        /* width: 100%; */
+        /* margin-right: 150px; */
+        /* margin-left: 150px; */
+        /* text-align: left; */
+        /* justify-content: flex-start; */
+    }
+
+    .about_screenshot{
+        width: 100%;
+        /* height:750px; */
+        /* object-fit: contain; */
+    }
+
+
+    .finalLineAbout{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 150px;
+    }
+
+    /* .aboutWordsAndSlide{
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    .about_slides_container{
+        margin-bottom: 30px;
+    }
+
+    .about_screenshot{
+        width: 100%;
+        height:531.25px;
+    } */
 
     .grimoire_words{
         order:2;
@@ -930,26 +867,18 @@ button:hover + .character_sprite{
 
 @media only screen and (max-width: 1000px){
 
-.downloadInstructions{
-    margin-top: 100px;
-    margin-bottom: 100px;
-    display: flex;
-    flex-direction: column;
-}
-
 .downloadWords{
     margin-left: 100px;
     margin-right: 100px;
 }
 
 .downloadImage{
-    margin-left: auto;
-    margin-right: auto;
     padding: 0vw;
     width:100%;
-    height:531.25px;
-    object-fit: contain;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
+
 }
 
 @media only screen and (max-width: 600px){
@@ -1010,6 +939,53 @@ button:hover + .character_sprite{
     .book_button_forward, .book_button_forward:hover, .book_button_back, .book_button_back:hover{
         background-size: 14vw 10vw;
     }
+
+    .About{
+        display: flex;
+        flex-direction: column;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+
+    .aboutWordsAndSlide{
+        margin-top: 100px;
+
+        display: flex;
+        /* margin-left: 70px; */
+        /* margin-right: 70px; */
+        flex-basis: center;
+    }
+
+    .aboutWords{
+        display: flex;
+        flex-direction: column;
+        margin-top: 0px;
+        /* width: 200%; */
+        margin-right: 0px;
+        margin-left: 0px;
+        text-align: left;
+    }
+
+    li{
+        font-size: 35px;
+
+    }
+
+    .about_screenshot{
+        /* width: 100%; */
+        height:400px;
+        object-fit: contain;
+    }
+
+
+    .finalLineAbout{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 150px;
+    }
+
+
 
 
 }
