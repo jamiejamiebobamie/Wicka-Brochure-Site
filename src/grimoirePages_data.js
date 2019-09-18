@@ -84,7 +84,7 @@ const data = [
         },
     {
     title:"Spellbooks",
-    description:'Monsters on occasion drop spellbooks that give Wicka new abilities. Who knows what they\'re doing with them...',
+    description:'Monsters on occasion drop spellbooks that give Wicka new abilities.',
     img:"media/gifs/spell_book_pickups.gif",
     width: 600,
     height: 338,
@@ -104,7 +104,7 @@ const data = [
             },
     {
     title:"Melt Self",
-    description:'As molten wax, Wicka can sink below the stone floor to evade her enemies. While useful, the spell leeches health.',
+    description:'As molten wax, Wicka can sink below the stone floor to evade her enemies. While useful, this spell leeches health.',
     img:"media/gifs/melt_self2.gif",
     width: 600,
     height: 338,
@@ -114,7 +114,7 @@ const data = [
         },
     {
     title:"Freeze Ray",
-    description:'Wicka can briefly freeze enemies in their tracks with Freeze Ray. The spell uses mana.',
+    description:'Wicka can briefly freeze enemies in their tracks with Freeze Ray. This spell uses mana.',
     img:"media/gifs/freeze_ray1.gif",
     width: 600,
     height: 338,

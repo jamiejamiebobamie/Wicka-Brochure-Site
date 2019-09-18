@@ -43,8 +43,8 @@ class About extends Component {
                 <div className="aboutWordsAndSlide">
                     <div className="aboutWords">
                         <ul className="bulletPoints">
-                        <li>Collect spell books and gain new abilities.</li>
-                        <li>Exit the tomb and find the answers you seek!</li>
+                            <li>Collect spell books and gain new abilities.</li>
+                            <li>Exit the tomb and find the answers you seek!</li>
                         </ul>
                     </div>
                     <div className="about_slides_container">
@@ -52,7 +52,7 @@ class About extends Component {
                     </div>
                 </div>
 
-              <h4>Who has awoken Wicka and for what purpose?</h4>
+              <h4 className="finalLineAbout">Who has awoken Wicka and for what purpose?</h4>
           </div>
 
         )

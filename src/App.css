@@ -39,15 +39,7 @@
 }
 
 .MonsterEyesContainer{
-    /* margin-left: 10000.65vw; */
 
-    /* display: flex;
-    justify-content: center;
-    align-self: center;
-    align-items: center;
-    align-content: center; */
-    /* margin-left: -140.65vw; */
-    /* margin-right: -1000px; */
 }
 
 @keyframes App-logo-spin {
@@ -94,14 +86,6 @@ html, body {
 }
 
 .character{
-    /* padding-top: 5vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    z-index: 1;
-    flex-shrink: 0;
-    flex-grow: 1; */
-
     position: fixed;
     Width: 100%;
     bottom: 0;
@@ -112,73 +96,43 @@ html, body {
 .index_buttons{
     display: flex;
     justify-content: space-evenly;
-    /* padding-left: 20vw;
-    padding-right: 20vw; */
     z-index: 3;
-    /* margin-top: -50px; */
-    /* background-color: blue; */
 }
 
 .index_buttons_homepage{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-
-    /* padding-left: 20vw;
-    padding-right: 20vw; */
-    /* z-index: 3; */
     margin-top: 30px;
-    /* background-color: blue; */
-    /* background-color: pink; */
 }
 
 .homepageLinks{
     display: flex;
     flex-wrap: wrap;
-
-    /* max-width: 600px; */
-    /* height: 200px; */
     justify-content: space-around;
     flex-direction: row;
     margin-left: auto;
     margin-right: auto;
     transform: scale(1.2);
-    /* padding: -100px; */
-    /* background-color: blue; */
     margin-top: -50px;
 }
 
 
 
 .logo_sprite{
-    /* padding: 130px; */
-    /* z-index: 1; */
-    /* display: block; */
     display: flex;
     align-self: center;
     margin-top:  10px;
-    /* margin-bottom: -10; */
     margin-left: 20px;
-    /* margin-right: auto; */
     width: 450px;
     height: 180px;
-    /* background: url('/media/sprites/logo_spritesheet_750by300_29250_38steps_copy.png') left center; */
     background: url('/media/sprites/logo_spritesheet_750by300_29250_38steps_60percent.png') left center;
-
-    /* animation: logoAnim 4s steps(38) infinite; */
     animation: logoAnim 4s steps(38) infinite;
-
-    /* transform: scale(.6); */
 }
 
 @keyframes logoAnim{
-    /* 1 step */
   from{background-position-x:0px;}
-  /* to{background-position-x:-28500px;} */
   to{background-position-x:-17100px;}
-
-  /* to{background-position-x:-17550px;} */
-
 }
 
 .logo{
@@ -195,22 +149,15 @@ html, body {
     z-index: 5;
     display: block;
     opacity: .5;
-    /* width: 30vw; */
-    /* height: 10vw; */
-    /* padding-top: 1vw; */
-    /* padding-bottom: 1vw; */
     margin-top: 70px;
     margin-left: 2vw;
     margin-right: 2vw;
     font-size: 60px;
-    /* border-radius: 5px; */
     letter-spacing: .1vw;
     color: white;
     background-color: transparent;
     font-family: 'Slenderman';
-    /* font-style: normal; */
     text-decoration: none;
-
 }
 
 .hurray{
@@ -248,19 +195,13 @@ html, body {
 }
 
 @keyframes candle_float{
-    /* 94 step */
   from{background-position-x:0px;}
   to{background-position-x:-84600px;}
 }
 
 .door_sprite{
     margin-top: -100px;
-    /* margin-left: 0px; */
     margin-bottom: -180px;
-    /* transform: scale(.5); */
-    /* display: block; */
-    /* margin-left: auto; */
-    /* margin-right: auto; */
     width: 560px;
     height: 600px;
     background: url('/media/sprites/door_sprite_560by600_36400_64steps.png') left center;
@@ -292,28 +233,10 @@ img:not([src]) {
     transform: scale(.75);
 }
 
-/* I NEED A SMOOTH TRANSITION RULE TO FIX THIS... */
-/*
-
-@media only screen and (max-width:950px){
-    .character{
-        margin-left: -1.5vw;
-    }
-}
-
-
-@media only screen and (max-width:850px){
-    .character{
-        margin-left: -6vw;
-    }
-} */
-
-
 @keyframes idle{
   from{background-position-x:0px;}
   to{background-position-x:-29760px;}
 }
-
 
 .character_sprite:hover, .character_sprite:active, .character_sprite:focus{
     background: url('/media/sprites/character_handUp.png') left center;
@@ -331,19 +254,6 @@ img:not([src]) {
   from{background-position-x:0px;}
   to{background-position-x:-29760px;}
 }
-
-
-/* .monster{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    top:auto;
-    margin-left: auto;
-    margin-right: auto;
-    margin: 1vw;
-    transform: translateY(5px) 4s infinite alternate-reverse;
-    background-color: orange;
-} */
 
 .monster_pack{
     margin: 1vw;
@@ -368,139 +278,79 @@ img:not([src]) {
 }
 
 .monster{
-    /* position: relative; */
-    /* z-index: -1; */
 
-    /* left: 200px;
-    top: 627px; */
-
-    /* display: flex;
-    flex-direction: row;
-    background-color: orange;
-    width: 100%;
-    justify-content: center; */
 }
 
 .monster_sprite{
     width: 40px;
     height: 20px;
     background: url('/media/sprites/monster_open_eyes_sprite4.png') left center;
-
-
-    /* original full sprite sheet */
-    /* animation: openEyes 10s steps(414) infinite alternate-reverse; */
-
-    animation:  eyesOpened 1s steps(1) infinite alternate-reverse;
-
     animation: openEyes 1s steps(30) infinite alternate-reverse;
 }
 
-.monster1_sprite{
-     animation-delay: 4.7s;
-}
-
-.monster2_sprite{
-     animation-delay: 2.4s;
-}
-
-.monster3_sprite{
-      animation-delay: 2s;
-}
-
-.monster4_sprite{
-     animation-delay: 4.4s;
-}
-
-.monster5_sprite{
-     animation-delay: 1s;
-}
-
-.monster6_sprite{
-      animation-delay: 3s;
-}
-
-.monster7_sprite{
-     animation-delay: 3.6s;
-}
-
-.monster8_sprite{
-     animation-delay: 4s;
-}
-
-.monster9_sprite{
-      animation-delay: 5s;
-}
-
-/* 415 steps */
-/* openEyes original */
-/* @keyframes openEyes{
-  from{background-position-x:-16560px;}
-  to{background-position-x:0px;}
-} */
-
-/* 30 steps */
 @keyframes openEyes{
   from{background-position-x:-1200px;}
   to{background-position-x:0px;}
 }
 
-/* @keyframes openEyes{
-  from{background-position-x:0px;}
-  to{background-position-x:1200px;}
-} */
-
-/* 1 step */
 @keyframes eyesOpened{
   from{background-position-x:-1200px;}
   to{background-position-x:-1160px;}
-}
-
-
-
-/* Back button for all non-index pages. (About, Grimoire, and Download.) */
-.back_button{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 25px;
-    /* width: 10vw; */
-    height: 250px;
-    /* background-color: pink; */
-    /* float: right; */
-    margin-right: auto;
-    width: 100%;
-    /* margin-left: auto; */
-}
-
-.back_button_img{
-    margin-left: 55vw;
-    margin-right: auto;
-    background: url('/media/imgs/back_button_hover.png') left center;
-    /* width:1305px;
-    height:838px; */
-    width:25vw;
-    height:100%;
-    background-size: 26vw 10vw;
-    background-repeat: no-repeat;
-    /* background-color: red; */
-}
+}x
 
 /* About page divs in order of appearance. */
 
 .About{
-    /* margin-right:100px; */
-    /* margin-left:100px; */
-    /* margin-bottom: auto; */
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* justify-content: center; */
 
+}
+
+.downloadLink{
+    text-decoration: none;
+}
+
+.downloadLink:hover{
+    text-decoration: underline;
+    color: #ebd315;
+}
+
+.downloadP{
+    margin-top: 150px;
+    color: #ebd315;
+    opacity: .5;
+}
+
+.downloadP:hover{
+    opacity: .7;
+}
+
+.downloadInstructions{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.downloadWords{
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+.downloadImage{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0vw;
+    width:800px;
+    height:531.25px;
+    object-fit: contain;
 }
 
 .about_slideControls_container{
     margin: auto;
     width: 50%;
+}
+
+.About{
+    margin-bottom: 100px;
 }
 
 .about_slideControls{
@@ -509,21 +359,43 @@ img:not([src]) {
 }
 
 .about_mySlides{
-    /* width:100%; */
     margin-bottom: 100px;
 }
 
 .about_slides_container{
     padding-left: 0px;
-    /* margin-bottom: -100px; */
 }
 
 .about_screenshot{
-    /* width:1200px; */
     width: 100%;
     height:750px;
-    /* padding: 3vw; */
     object-fit: contain;
+}
+
+.finalLineAbout{
+    display: flex;
+
+    flex-direction: column;
+        margin-bottom: 100px;
+}
+
+.aboutWordsAndSlide{
+    display: flex;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-bottom: 100px;
+    flex-basis: center;
+
+
+}
+
+.aboutWords{
+    display: flex;
+    flex-direction: column;
+    margin-top: 150px;
+    width: 200%;
+    margin-right: 75px;
+    text-align: left;
 }
 
 .about_button_back{
@@ -574,10 +446,6 @@ img:not([src]) {
     margin-right: auto;
 }
 
-.download_p{
-    color: white;
-}
-
 .download_instructions{
     display: block;
     margin-top: 2vw;
@@ -588,7 +456,6 @@ img:not([src]) {
     z-index:0;
     background-image: url('/media/imgs/backButtonHover.png') left center;
 }
-
 
 .test_gif{
     display: block;
@@ -614,9 +481,7 @@ h2{
     margin-right: auto;
     color: white;
     font-family: 'Slenderman';
-    /* font-size: 8vw; */
     font-size: 100px;
-
     margin-bottom: 2vw;
 }
 
@@ -638,8 +503,6 @@ h4{
     display: flex;
     margin-left: 70px;
     margin-right: 70px;
-    /* justify-content: space-between; */
-    /* background-color: pink; */
     flex-basis: center;
 
 
@@ -649,9 +512,6 @@ h4{
     display: flex;
     flex-direction: column;
     margin-top: 150px;
-    /* width: 800px; */
-    /* margin-right: 30px */
-    /* background-color: red; */
     width: 200%;
     margin-right: 75px;
     text-align: left;
@@ -660,7 +520,6 @@ h4{
 ul{
     font-family: 'Slenderman';
     color: white;
-    /* width:100%; */
     align-self: center;
     display: flex;
     flex-direction: column;
@@ -682,9 +541,7 @@ p{
     margin-right: auto;
     color: #9B3201;
     font-family: 'Optima', sans-serif;
-    /* font-size: 2vw; */
     font-size: 30px;
-
     text-indent: 0em;
     letter-spacing: .4vw;
     line-height: 3vw;
@@ -694,18 +551,14 @@ p{
 h3{
     float: right;
     color: #9B3201;
-    /* color: white; */
     font-family: 'Optima', sans-serif;
     font-size: 2vw;
     margin-top: 1vw;
 }
 
 .mySlides{
-    /* this refuses to let me apply flexbox to its children... */
     display: flex;
     flex-direction: row;
-    /* align-items: baseline; */
-    /* justify-content: center; */
     padding: 1vw;
     margin-right:11vw;
     margin-left:11vw;
@@ -720,7 +573,6 @@ h3{
     margin-left: 150px;
     margin-right: 150px;
     margin-top: 120px;
-    /* background-color: pink; */
 }
 
 .innerDIV_healthbar{
@@ -728,17 +580,13 @@ h3{
 }
 
 .test_gif_health_bar{
-    /* margin: 30px; */
     width: 100%;
-
     margin-left: 0px;
-     /* margin-right: 100px; */
     padding-left: 0px;
     padding-right: 0px;
 }
 
 .grimoire_words{
-    /* margin-top: 50px; */
     padding-right: 8vw;
     margin-bottom: 200px;
 }
@@ -749,7 +597,6 @@ h3{
     margin-left: 30px;
 
 }
-
 
 .fade {
   -webkit-animation-name: fade;
@@ -772,9 +619,6 @@ h3{
 .book{
     z-index: 3;
     display: flex;
-    /* flex-direction: column-reverse; */
-    /* background-color: blue; */
-    /* justify-content: space-around; */
     margin-top: auto;
     margin-right: 230px;
     margin-left: 230px;
@@ -801,13 +645,10 @@ button:hover + .character_sprite{
     z-index: 1;
     display: block;
     margin-top:  auto;
-    /* margin-bottom: auto; */
     margin-left: auto;
     margin-right: auto;
     width: 300px;
     height: 230px;
-    /* background: url('/media/sprites/book_rollover_black_background_CROPPED.png') left center; */
-    /* animation: openBook 3s steps(1) infinite; */
 }
 
 .book_sprite, .book_button_1, .book_button_2{
@@ -835,45 +676,29 @@ button:hover + .character_sprite{
         -webkit-transform: rotate(180deg);
         transform: rotate(180deg) scale(1.1);
         background-repeat: no-repeat;
-        /* transform: scale(1.1); */
-        /* margin-right: -2vw; */
         opacity: 1;
 
     }
 
     .book_button_forward{
         background: url('/media/imgs/cycle_GrimoirePages_button.png') left center;
-        /* background: url('/media/imgs/test2.png') left center; */
-
-        /* background: url('/media/imgs/icon_arrow4.png') left center; */
-
-        /* cycle_GrimoirePages_button */
         background-repeat: no-repeat;
         opacity: 0.6;
 
     }
 
     .book_button_forward:hover{
-        /* background: url('/media/imgs/icon_arrow4Hover.png') left center;
-        background-repeat: no-repeat; */
         transform: scale(1.1);
         opacity: 1;
-        /* margin-left: -2vw; */
-
     }
 
     .book_button_forward, .book_button_forward:hover{
-        /* background-size: 13vw 5vw; */
-
         background-size: 7vw 5vw;
         z-index: 1;
         display: block;
         margin-top:  auto;
         margin-bottom: 50px;
-        /* margin-top: -2vw; */
-        /* margin-left: auto; */
         margin-right: auto;
-
         max-height: 100px;
 
     }
@@ -896,24 +721,6 @@ button:hover + .character_sprite{
         .book_button_forward, .book_button_forward:hover,.book_button_back, .book_button_back:hover{
             /* background-color: pink; */
         }
-
-
-/* .animation_open{
-    animation: openBook 3s steps(1) infinite;
-}
-
-.animation_forward{
-    animation: turnPageForward 3s steps(86) forwards;
-}
-
-.animation_backward{
-    animation: turnPageBackward 3s steps(86) forwards;
-} */
-
-
-
-
-
 
 .animation_open, .animation_forward, .animation_backward{
     z-index: 1;
@@ -1101,14 +908,11 @@ button:hover + .character_sprite{
     .index_buttons{
         flex-wrap: wrap;
         flex-direction: column;
-        /* margin-left: 100px;
-        margin-right:100px; */
         margin-left: -30px;
         padding-left: 0px;
         padding-right: 0px;
         margin-right: 0px;
         margin-top: 10px;
-        /* max-width: 700px; */
         margin-bottom: -100px;
         /* BE CAREFUL WITH NEGATIVE HEIGHTHS!!! */
 
@@ -1116,26 +920,7 @@ button:hover + .character_sprite{
 
     .aboutWordsAndSlide{
         flex-direction: column;
-        /* margin-left: 70px;
-        margin-right: 70px; */
-        /* justify-content: space-between; */
-        /* background-color: pink; */
-        /* flex-basis: center; */
-
-
     }
-
-    /* .index_grimoire{
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-    }
-
-    .index_download{
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-    } */
 
     .grimoire_words{
         order:2;
@@ -1171,6 +956,30 @@ button:hover + .character_sprite{
 }
 
 
+@media only screen and (max-width: 1000px){
+
+.downloadInstructions{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.downloadWords{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.downloadImage{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0vw;
+    width:100%;
+    height:531.25px;
+    object-fit: contain;
+}
+}
+
 @media only screen and (max-width: 600px){
 
     .toggleDropdownMenu{
@@ -1193,17 +1002,14 @@ button:hover + .character_sprite{
         width:100%;
         display: flex;
         justify-content: center;
-        /* height:17vw; */
         font-size: 60px;
     }
 
     .logo_sprite{
         margin-left: 15px;
-        /* width: 100%; */
-
     }
+
     .index_buttons{
-        /* background-color: pink; */
         margin-left: -15px;
         padding-left: 0px;
         padding-right: 0px;
@@ -1211,9 +1017,7 @@ button:hover + .character_sprite{
     }
 
     .character{
-        /* width: -40%; */
-        /* margin-left: -40.65vw; */
-        /* overflow: hidden; */
+
     }
 
     .character_sprite{
@@ -1221,15 +1025,7 @@ button:hover + .character_sprite{
     }
 
     .MonsterEyesContainer{
-        /* margin-left: 10000.65vw; */
 
-        /* display: flex;
-        justify-content: center;
-        align-self: center;
-        align-items: center;
-        align-content: center; */
-        /* margin-left: -140.65vw; */
-        /* margin-right:  */
     }
 
     .book_button_back:hover{
@@ -1240,95 +1036,8 @@ button:hover + .character_sprite{
     }
 
     .book_button_forward, .book_button_forward:hover, .book_button_back, .book_button_back:hover{
-        /* background-size: 7vw 5vw; */
         background-size: 14vw 10vw;
-        /* margin-top: auto; */
     }
 
-
-}
-
-.monster_eyes{
-    display: block;
-    margin-top: 3vw;
-    margin-bottom: 3vw;
-    margin-left: auto;
-    margin-right: auto;
-    z-index: 1;
-}
-
-.mockup{
-    position: absolute;
-    top: 590px;
-    left: 740px;
-    z-index: 0;
-}
-
-
-
-.monster2{
-    position: absolute;
-    left: 818px;
-    top: 619px;
-    /* opacity: .5; */
-
-}
-
-.monster3{
-    position: absolute;
-    left: 865px;
-    top: 638px;
-    /* opacity: .5; */
-
-}
-
-.monster4{
-    position: absolute;
-    left: 898px;
-    top: 604px;
-    /* opacity: .5; */
-
-}
-
-/*  "leader" centerpiece  */
-.monster5{
-    position: absolute;
-    left: 944px;
-    top: 648px;
-    /* opacity: .5; */
-
-}
-
-.monster6{
-    position: absolute;
-    left: 1020px;
-    top: 634px;
-    /* opacity: .5; */
-
-}
-
-
-/* far-right */
-.monster7{
-    position: absolute;
-    left: 1140px;
-    top: 627px;
-    /* opacity: .5; */
-
-}
-
-.monster8{
-    position: absolute;
-    left: 1067px;
-    top: 613px;
-    /* opacity: .5; */
-
-}
-
-.monster9{
-    position: absolute;
-    left: 981px;
-    top: 606px;
-    /* opacity: .5; */
 
 }
