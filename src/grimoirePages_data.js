@@ -1,7 +1,7 @@
 const data = [
     {
     title:"Wicka",
-    description:'Wicka is an immortal, wax witch who has been asleep for centuries.',
+    description:'In "Wicka" you play as Wicka, an immortal, wax witch who has been asleep for centuries.',
     img:"media/imgs/_wicka4.png",
     width: 600,
     height: 285,
@@ -14,7 +14,7 @@ const data = [
         },
     {
     title:"Wax Witches",
-    description:'Wax Witches trade in their human bodies for ones made of wax. Contrary to popular belief, not all Wax Witches eat children.',
+    description:'Wax Witches give up their mortal, human bodies for wax ones. Contrary to popular belief, not all Wax Witches eat children.',
     img:"media/imgs/wickwoman1.png",
     width: 330,
     height: 400,
@@ -24,7 +24,7 @@ const data = [
         },
     {
     title:"The Exit",
-    description:'After waking, Wicka can see the exit to her tomb in the distance. But before she can leave, she must face the monsters that dwell here with her.',
+    description:'After waking, you can see the exit in the distance. To leave, you must defeat the monsters that stand in your way.',
     img:undefined,
     width: 560,
     height: 600,
@@ -44,7 +44,7 @@ const data = [
         },
     {
     title:"Enchanted Candles",
-    description:'To regain lost health, Wicka can melt the candles she finds and assimilate the wax into her body, which is fortunate, because...',
+    description:'To regain lost health, Wicka can melt the candles she finds and repair her wax body. Which is fortunate, because...',
     img:"media/gifs/telekinesis_brick_riding2.gif",
     width: 600,
     height: 338,
@@ -74,7 +74,7 @@ const data = [
         },
     {
     title:"Whip Wand",
-    description:'Whip Wand turns Wicka\'s wand into a whip. You start the game with this spell. It requires no mana or health to cast.',
+    description:'Use Wicka\'s magic to defeat monsters. You start the game with the spell Whip Wand. It requires no mana or health to cast.',
     img:"media/gifs/whip_wand1.gif",
     width: 600,
     height: 338,

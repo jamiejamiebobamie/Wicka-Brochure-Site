@@ -39,11 +39,15 @@ render(){
               <Route exact path="/"
               render={props => <Homepage update={this.updateWindowDimensions} width={this.state.width} height={this.state.height} />}
                />
-              <Route path="/about" component={About} />
+              <Route path="/about"
+              render={props => <About width={this.state.width} />}
+               />
               <Route path="/grimoire"
               render={props => <Grimoire width={this.state.width} />}
                />
-              <Route path="/download" component={Download} />
+               <Route path="/download"
+               render={props => <Download width={this.state.width} />}
+                />
           </div>
       </Router>
     );

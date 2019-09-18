@@ -489,12 +489,12 @@ img:not([src]) {
 /* About page divs in order of appearance. */
 
 .About{
-    margin-right:100px;
-    margin-left:100px;
-    margin-bottom: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    /* margin-right:100px; */
+    /* margin-left:100px; */
+    /* margin-bottom: auto; */
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
 
 }
 

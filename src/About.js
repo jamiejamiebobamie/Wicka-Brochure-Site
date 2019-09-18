@@ -14,49 +14,45 @@ class About extends Component {
     }
 
     render(){
-        setTimeout(function(){
-            if (this.state.aboutSlideIndex+1 < data.length){
-                this.setState({aboutSlideIndex:this.state.aboutSlideIndex+1})
-            } else {
-                this.setState({aboutSlideIndex:0})
-            };}
-            .bind(this), 5000);
         return (
           <div className="About">
-                <NavBar />
+            <NavBar dropdownMenu={true} width={this.props.width} liftState={this.toggleNavbar} />
 
                 <div className="aboutWordsAndSlide">
-
-                <div className="aboutWords">
-                  <h4>"Wicka" is an unfinished 3rd person action-adventure game.</h4>
-                  <h4>Made with the Unreal Engine.</h4>
-                </div>
-
-                <div className="about_slides_container">
-                            <img className="about_screenshot" src={data[0]} alt=""/>
-                </div>
+                    <div className="aboutWords">
+                      <h4>"Wicka" is an unfinished 3rd person action-adventure game.</h4>
+                      <h4>Made with the Unreal Engine.</h4>
+                    </div>
+                    <div className="about_slides_container">
+                        <img className="about_screenshot" src={data[0]} alt=""/>
+                    </div>
                 </div>
 
                 <div className="aboutWordsAndSlide">
-                <div className="about_slides_container">
+                    <div className="about_slides_container">
                             <img className="about_screenshot" src={data[4]} alt=""/>
-                </div>
-                <div className="aboutWords">
-                <ul className="bulletPoints">
-                    <li>Play as the immortal, wax witch, Wicka.</li>
-                    <li>Slay monsters.</li>
-                    <li>Collect spell books and gain new abilities.</li>
-                    <li>Exit the tomb and find the answers you seek!</li>
-                </ul>
-                </div>
-
-
+                    </div>
+                    <div className="aboutWords">
+                        <ul className="bulletPoints">
+                            <li>Play as the immortal, wax witch, Wicka.</li>
+                            <li>Slay monsters.</li>
+                        </ul>
+                    </div>
                 </div>
 
+                <div className="aboutWordsAndSlide">
+                    <div className="aboutWords">
+                        <ul className="bulletPoints">
+                        <li>Collect spell books and gain new abilities.</li>
+                        <li>Exit the tomb and find the answers you seek!</li>
+                        </ul>
+                    </div>
+                    <div className="about_slides_container">
+                            <img className="about_screenshot" src={data[1]} alt=""/>
+                    </div>
+                </div>
 
               <h4>Who has awoken Wicka and for what purpose?</h4>
-              <AboutSlide aboutSlideIndex={this.state.aboutSlideIndex} />
-
           </div>
 
         )

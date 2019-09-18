@@ -20,15 +20,11 @@ class MonsterEyes extends Component{
     }
 
     randomBlink(){
-            this.setState({random: Math.random()})
-            // if (this.state.blinking){
-                // this.setState( {animation: 'eyesOpened 1s steps(1) infinite alternate-reverse', blinking: false} )
-            // } else {
-                if (this.state.random > .5){
+            // this.setState({random: })
+                if (Math.random() > .8){
                     this.setState( {animation: 'openEyes 1.2s steps(30) infinite alternate', blinking: true} )
                     setTimeout( ()=> {this.setState({animation: 'eyesOpened 1s steps(1) infinite alternate-reverse', blinking: false})},2400);
                 }
-            // }
     }
 
     openEyes(){
@@ -40,11 +36,13 @@ class MonsterEyes extends Component{
 
 
 render() {
+
     if (!this.state.open){
         setTimeout(this.openEyes,this.delay)
     } else {
-        setTimeout(this.randomBlink,this.delay+10000)
+        setTimeout(this.randomBlink,10000)
     }
+
     return(
         <div className="monster"
              style={{
