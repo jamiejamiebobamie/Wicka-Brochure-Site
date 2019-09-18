@@ -14,14 +14,16 @@ class Homepage extends Component {
 
     toggleNavbar(state){
         this.setState({storedState: !this.state.storedState})
-        console.log(this.storedState)
     }
 
+    // <img className="thisIsForSpritePreload" src="/media/sprites/character_handUp.png" width='1' height='1' alt=""/>
+
     render(){
-        console.log(this.props.height < 960, this.state.dropdownMenu===true, this.props.width < 1400)
         return (
           <div className="Homepage">
+
               <NavBar dropdownMenu={true} width={this.props.width} liftState={this.toggleNavbar} />
+
               {this.props.height < 960 && this.state.storedState===true && this.props.width < 1400
 
               ?
@@ -34,8 +36,6 @@ class Homepage extends Component {
                   <MonsterEyesContainer update={this.props.update} width={this.props.width} height={this.props.height} />
                   <div className="character_sprite"/>
               </div>
-
-
           }
 
           </div>

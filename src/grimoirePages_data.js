@@ -10,7 +10,7 @@ const data = [
     grim_words: "grimoire_words"
         },
     {
-    title:"Wax Witch",
+    title:"Wax Witches",
     description:'Other wax witches exist and are undoubtedly behind Wicka\'s awakening.',
     img:"media/imgs/wickwoman1.png",
     width: 330,
@@ -31,7 +31,7 @@ const data = [
         },
     {
     title:"The Exit",
-    description:'The rectangle of light in the distance is the exit to your tomb. As Wicka, you must leave this place and find answers.',
+    description:'The rectangle of light in the distance is the exit to your tomb. As Wicka, you must leave ypur tomb and find answers. Who woke you up and why?',
     img:undefined,
     width: 560,
     height: 600,

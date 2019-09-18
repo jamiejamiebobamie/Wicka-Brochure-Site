@@ -38,6 +38,18 @@
 
 }
 
+.MonsterEyesContainer{
+    /* margin-left: 10000.65vw; */
+
+    /* display: flex;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    align-content: center; */
+    /* margin-left: -140.65vw; */
+    /* margin-right: -1000px; */
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -307,6 +319,12 @@ img:not([src]) {
     background: url('/media/sprites/character_handUp.png') left center;
     animation: wand 5s steps(32) infinite alternate-reverse;
     transform: scale(.75);
+}
+
+.thisIsForSpritePreload{
+    margin:0px;
+    padding: 0px;
+
 }
 
 @keyframes wand{
@@ -825,6 +843,8 @@ button:hover + .character_sprite{
 
     .book_button_forward{
         background: url('/media/imgs/cycle_GrimoirePages_button.png') left center;
+        /* background: url('/media/imgs/test2.png') left center; */
+
         /* background: url('/media/imgs/icon_arrow4.png') left center; */
 
         /* cycle_GrimoirePages_button */
@@ -1209,6 +1229,7 @@ button:hover + .character_sprite{
         align-items: center;
         align-content: center; */
         /* margin-left: -140.65vw; */
+        /* margin-right:  */
     }
 
     .book_button_back:hover{
