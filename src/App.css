@@ -220,7 +220,6 @@ img:not([src]) {
 }
 
 .character_sprite{
-    /* margin-top: -20px; */
     margin-bottom: -55px;
     display: flex;
     align-self: center;
@@ -296,12 +295,6 @@ img:not([src]) {
 @keyframes eyesOpened{
   from{background-position-x:-1200px;}
   to{background-position-x:-1160px;}
-}x
-
-/* About page divs in order of appearance. */
-
-.About{
-
 }
 
 .downloadLink{
@@ -333,6 +326,8 @@ img:not([src]) {
 .downloadWords{
     margin-left: 300px;
     margin-right: 300px;
+    margin-top: 100px;
+    margin-bottom: 1-0px;
 }
 
 .downloadImage{
@@ -342,6 +337,8 @@ img:not([src]) {
     width:800px;
     height:531.25px;
     object-fit: contain;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 .about_slideControls_container{
@@ -350,6 +347,8 @@ img:not([src]) {
 }
 
 .About{
+    display: flex;
+    flex-direction: column;
     margin-bottom: 100px;
 }
 
@@ -385,8 +384,6 @@ img:not([src]) {
     margin-right: 70px;
     margin-bottom: 100px;
     flex-basis: center;
-
-
 }
 
 .aboutWords{
@@ -664,7 +661,6 @@ button:hover + .character_sprite{
 
     .book_button_back{
         background: url('/media/imgs/cycle_GrimoirePages_button.png') left center;
-
         -webkit-transform: rotate(180deg);
         transform: rotate(180deg);
         background-repeat: no-repeat;
@@ -704,29 +700,20 @@ button:hover + .character_sprite{
     }
 
 .book_button_back, .book_button_back:hover{
-    /* background-size: 13vw 5vw; */
-
         background-size: 7vw 5vw;
         z-index: 1;
         display: block;
         margin-top:  auto;
         margin-bottom: 50px;
-        /* margin-top: -2vw; */
         margin-left: auto;
-        /* margin-right: auto; */
         max-height: 100px;
-
     }
 
-        .book_button_forward, .book_button_forward:hover,.book_button_back, .book_button_back:hover{
-            /* background-color: pink; */
-        }
 
 .animation_open, .animation_forward, .animation_backward{
     z-index: 1;
     display: block;
     margin-top:  auto;
-    /* margin-bottom: auto; */
     margin-left: auto;
     margin-right: auto;
     width: 300px;
@@ -790,8 +777,6 @@ button:hover + .character_sprite{
 
 
     h2{
-        /* text-indent: 0em; */
-        /* font-size: 14vw; */
         letter-spacing: .4vw;
         padding-bottom: 2vw;
         margin-top: 0px;
@@ -800,7 +785,6 @@ button:hover + .character_sprite{
 
     p{
         line-height: 5vw;
-        /* font-size: 4vw; */
     }
 
     ul, li{
@@ -825,9 +809,7 @@ button:hover + .character_sprite{
     }
 
     .book_button_forward, .book_button_forward:hover, .book_button_back, .book_button_back:hover{
-        /* background-size: 7vw 5vw; */
         background-size: 11vw 7vw;
-        /* margin-top: auto; */
     }
 
     .back_button{
@@ -861,7 +843,6 @@ button:hover + .character_sprite{
 
     .index_about, .index_grimoire, .index_download, .index_about::after{
         width:100%;
-        /* height:17vw; */
         font-size: 60px;
         margin-top: 15px;
     }
@@ -871,23 +852,16 @@ button:hover + .character_sprite{
     }
 
     .about_mySlides{
-        /* margin-right:7vw; */
-        /* margin-left:7vw; */
-        /* width:100%; */
         margin-bottom: 100px;
     }
 
     .about_slides_container{
         margin-bottom: 30px;
-        /* margin-right: 200px; */
     }
 
     .about_screenshot{
-        /* padding: 1vw; */
-        /* width:800px; */
         width: 100%;
         height:531.25px;
-        /* object-fit: contain; */
     }
 
     .download_instructions{
@@ -915,7 +889,6 @@ button:hover + .character_sprite{
         margin-top: 10px;
         margin-bottom: -100px;
         /* BE CAREFUL WITH NEGATIVE HEIGHTHS!!! */
-
     }
 
     .aboutWordsAndSlide{
@@ -934,7 +907,6 @@ button:hover + .character_sprite{
 
     .grimoire_picture{
         order:1;
-
         margin-left: 0px;
         margin-right: 0px;
         padding-left: 0px;

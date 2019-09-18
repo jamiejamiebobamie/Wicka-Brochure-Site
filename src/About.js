@@ -16,7 +16,7 @@ class About extends Component {
     render(){
         return (
           <div className="About">
-            <NavBar dropdownMenu={true} width={this.props.width} liftState={this.toggleNavbar} />
+            <NavBar dropdownMenu={false} width={this.props.width} liftState={this.toggleNavbar} />
 
                 <div className="aboutWordsAndSlide">
                     <div className="aboutWords">

@@ -20,11 +20,10 @@ class MonsterEyes extends Component{
     }
 
     randomBlink(){
-            // this.setState({random: })
-                if (Math.random() > .75){
-                    this.setState( {animation: 'openEyes 1.2s steps(30) infinite alternate', blinking: true} )
-                    setTimeout( ()=> {this.setState({animation: 'eyesOpened 1s steps(1) infinite alternate-reverse', blinking: false})},2400);
-                }
+        if (Math.random() > .75){
+            this.setState( {animation: 'openEyes 1.2s steps(30) infinite alternate', blinking: true} )
+            setTimeout( ()=> {this.setState({animation: 'eyesOpened 1s steps(1) infinite alternate-reverse', blinking: false})},2400);
+        }
     }
 
     openEyes(){
