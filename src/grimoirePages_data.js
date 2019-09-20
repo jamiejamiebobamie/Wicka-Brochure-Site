@@ -44,7 +44,7 @@ const data = [
         },
     {
     title:"Enchanted Candles",
-    description:'To regain lost health, Wicka can melt the candles she finds and repair her wax body. Which is fortunate, because...',
+    description:'To regain lost health, Wicka can melt the candles she finds to repair her wax body. Which is fortunate...',
     img:"media/gifs/telekinesis_brick_riding2.gif",
     width: 600,
     height: 338,
@@ -54,7 +54,7 @@ const data = [
         },
     {
     title:"Monsters!",
-    description:'...the world is littered with monsters. Some say these monsters are manifestations of the spellcaster\'s own demons made real by her magic.',
+    description:'...because the world is littered with monsters. Some say these monsters are manifestations of the spellcaster\'s own demons made real by her magic.',
     img:"media/gifs/telekinesis2.gif",
     width: 471,
     height: 337,
@@ -74,7 +74,7 @@ const data = [
         },
     {
     title:"Whip Wand",
-    description:'Use Wicka\'s magic to defeat monsters. You start the game with the spell Whip Wand. It requires no mana or health to cast.',
+    description:'Whip Wand turns Wicka\'s wand into a whip. It requires no mana or health to cast. You start the game with this spell.',
     img:"media/gifs/whip_wand1.gif",
     width: 600,
     height: 338,
@@ -84,7 +84,7 @@ const data = [
         },
     {
     title:"Spellbooks",
-    description:'Monsters on occasion drop spellbooks that give Wicka new abilities.',
+    description:'Monsters on occasion drop spellbooks that grant Wicka more spells.',
     img:"media/gifs/spell_book_pickups.gif",
     width: 600,
     height: 338,

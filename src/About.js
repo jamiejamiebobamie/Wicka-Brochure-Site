@@ -18,41 +18,30 @@ class About extends Component {
           <div className="About">
             <NavBar dropdownMenu={false} width={this.props.width} liftState={this.toggleNavbar} />
 
-                <div className="aboutWordsAndSlide">
+                <div className="firstLineAbout">
                     <div className="aboutWords">
-                      <h4>"Wicka" is an unfinished 3rd person action-adventure game.</h4>
-                      <h4>Made with the Unreal Engine.</h4>
+                      <h5 className="downloadWordsRed">"Wicka" is a 3rd person action-adventure game, made with the Unreal Engine.</h5>
                     </div>
-                    <div className="about_slides_container">
-                        <img className="about_screenshot" src={data[0]} alt=""/>
-                    </div>
+                    <img className="about_screenshot" src={data[0]} alt=""/>
                 </div>
 
                 <div className="aboutWordsAndSlide">
-                    <div className="about_slides_container">
-                            <img className="about_screenshot" src={data[4]} alt=""/>
-                    </div>
-                    <div className="aboutWords">
-                        <ul className="bulletPoints">
-                            <li>Play as the immortal, wax witch, Wicka.</li>
-                            <li>Slay monsters.</li>
-                        </ul>
-                    </div>
+                    <img className="about_screenshot" src={data[4]} alt=""/>
+                    <ul className="aboutWords">
+                        <li className="downloadWordsWhite">Play as the immortal, wax witch, Wicka.</li>
+                        <li className="downloadWordsWhite">Slay monsters.</li>
+                    </ul>
                 </div>
 
                 <div className="aboutWordsAndSlide">
-                    <div className="aboutWords">
-                        <ul className="bulletPoints">
-                            <li>Collect spell books and gain new abilities.</li>
-                            <li>Exit the tomb and find the answers you seek!</li>
-                        </ul>
-                    </div>
-                    <div className="about_slides_container">
-                            <img className="about_screenshot" src={data[1]} alt=""/>
-                    </div>
+                    <ul className="aboutWords">
+                            <li className="downloadWordsWhite">Collect spell books and gain new abilities.</li>
+                            <li className="downloadWordsWhite">Exit the tomb and find the answers you seek!</li>
+                    </ul>
+                    <img className="about_screenshot" src={data[1]} alt=""/>
                 </div>
 
-              <h4 className="finalLineAbout">Who has awoken Wicka and for what purpose?</h4>
+              <h5 className="finalLineAbout">Who has awoken Wicka and for what purpose?</h5>
           </div>
 
         )
