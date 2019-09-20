@@ -39,7 +39,7 @@ render() {
     if (!this.state.open){
         setTimeout(this.openEyes,this.delay)
     } else {
-        setTimeout(this.randomBlink,10000)
+        setTimeout(this.randomBlink,10000+this.delay/2)
     }
 
     return(

@@ -494,6 +494,7 @@ h3{
     margin-left: 0px;
     padding-left: 0px;
     padding-right: 0px;
+    margin-bottom: 300px;
 }
 
 .grimoire_words{
@@ -856,8 +857,13 @@ button:hover + .character_sprite{
     }
     .grimoire_words_healthBar{
         order:1;
-
+        margin-bottom: 300px;
     }
+
+    .test_gif_health_bar{
+        margin-bottom: 0px;
+    }
+
     .toggleDropdownMenu{
         margin-left: 2.5%;
     }
@@ -984,7 +990,6 @@ button:hover + .character_sprite{
         flex-direction: column;
         margin-bottom: 150px;
     }
-
 
 
 
