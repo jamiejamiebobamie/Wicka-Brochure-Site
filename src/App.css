@@ -376,7 +376,6 @@ img:not([src]) {
 
 
 .downloadWordsRed, .finalLineAbout, .downloadWordsWhite{
-    color: #9B3201;
     font-family: 'Optima', sans-serif;
     font-size: 2vw;
     letter-spacing: .4vw;
@@ -386,6 +385,10 @@ img:not([src]) {
 
 .downloadWordsWhite{
     color: white;
+}
+
+.downloadWordsRed, .finalLineAbout{
+    color: #9B3201;
 }
 
 .finalLineAbout{
@@ -937,10 +940,7 @@ button:hover + .character_sprite{
     }
 
 .downloadWordsRed, .finalLineAbout, .downloadWordsWhite{
-    color: #9B3201;
-    font-family: 'Optima', sans-serif;
     font-size:25px;
-    letter-spacing: .4vw;
     line-height: 30px;
     margin-bottom: 30px;
 }
