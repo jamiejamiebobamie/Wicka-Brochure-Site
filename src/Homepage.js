@@ -26,6 +26,7 @@ class Homepage extends Component {
               { this.props.height < 960
                   && this.state.storedState===true
                   && this.props.width < 1400
+                  || this.props.height < 650
 
               ?
 

@@ -60,6 +60,8 @@ class Grimoire extends Component {
                                         animation:'openBook 3s steps(1) infinite'})
                                     }>
                         </button>
+
+                        <div className='book'>
                         <div
                             className="book_sprite_anim"
                             id="book_sprite"
@@ -75,6 +77,12 @@ class Grimoire extends Component {
                                     animation:'openBook 3s steps(1) infinite'})
                                 }>
                         </div>
+                            <img
+                                className="book_background_img"
+                                src='/media/imgs/book_background.png'
+                                alt=''/>
+                        </div>
+
                         <button className="book_button_forward"
                             type="button"
                             name="forward"
