@@ -34,6 +34,14 @@
   color: #61dafb;
 }
 
+.bulletPoints{
+
+}
+
+.MonsterEyesContainer{
+
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -74,6 +82,7 @@ html, body {
     flex-direction: column;
     flex-shrink: 0;
     align-items: stretch;
+
 }
 
 .character{
@@ -81,6 +90,8 @@ html, body {
     Width: 100%;
     bottom: 0;
 }
+
+
 
 .index_buttons{
     display: flex;
@@ -106,6 +117,8 @@ html, body {
     margin-top: -50px;
 }
 
+
+
 .logo_sprite{
     display: flex;
     align-self: center;
@@ -130,6 +143,7 @@ html, body {
     z-index:0;
     background-image: url('/media/imgs/backButtonHover.png') left center;
 }
+
 
 .index_about,.index_grimoire, .index_download{
     z-index: 5;
@@ -163,6 +177,7 @@ html, body {
     z-index: 2;
 }
 
+
 .candle_sprite_test{
     z-index: 0;
     display: block;
@@ -176,6 +191,7 @@ html, body {
     background: url('/media/sprites/candle_sprite_test_900by380_85500_94steps.png') left center;
     animation: candle_float 15s steps(94) infinite;
     transform: scale(.75);
+
 }
 
 @keyframes candle_float{
@@ -230,6 +246,7 @@ img:not([src]) {
 .thisIsForSpritePreload{
     margin:0px;
     padding: 0px;
+
 }
 
 @keyframes wand{
@@ -255,6 +272,10 @@ img:not([src]) {
     background: url('/media/sprites/monster_open_eyes_sprite4.png') left center;
     animation: openEyes 10s steps(414) infinite alternate-reverse;
     animation-delay: 1s;
+}
+
+.monster{
+
 }
 
 .monster_sprite{
@@ -606,6 +627,7 @@ button:hover + .character_sprite{
         margin-bottom: 50px;
         margin-right: auto;
         max-height: 100px;
+
     }
 
 .book_button_back, .book_button_back:hover{
@@ -782,16 +804,29 @@ button:hover + .character_sprite{
     .aboutWordsAndSlide, .firstLineAbout{
         display: flex;
         flex-direction: column;
+        /* margin-left: 70px; */
+        /* margin-right: 70px; */
         justify-content: center;
+        /* flex-basis: center; */
+        /* width: 100% */
+
     }
 
     .aboutWords{
         display: flex;
         flex-direction: column;
+        /* margin-top: 75px; */
+        /* width: 100%; */
+        /* margin-right: 150px; */
+        /* margin-left: 150px; */
+        /* text-align: left; */
+        /* justify-content: flex-start; */
     }
 
     .about_screenshot{
         width: 100%;
+        /* height:750px; */
+        /* object-fit: contain; */
     }
 
 
@@ -801,16 +836,26 @@ button:hover + .character_sprite{
         margin-bottom: 150px;
     }
 
+    /* .aboutWordsAndSlide{
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+    .about_slides_container{
+        margin-bottom: 30px;
+    }
+    .about_screenshot{
+        width: 100%;
+        height:531.25px;
+    } */
+
     .grimoire_words{
         order:2;
-        margin-left: 150px;
-        margin-right: 150px;
+        margin-left: 30px;
+        margin-right: 30px;
         padding-left: 0px;
         padding-right: 0px;
         margin-bottom: 240px;
-        letter-spacing: .4vw;
-        line-height: 3vw;
-        margin-top: 100px;
+
     }
 
     .grimoire_picture{
@@ -865,7 +910,11 @@ button:hover + .character_sprite{
 
 .about_screenshot{
     width: 100%;
+    /* height:400px; */
+    /* object-fit: contain; */
 }
+
+
 
     .aboutWordsAndSlide, .firstLineAbout{
         margin-top: 0px;
@@ -901,6 +950,12 @@ button:hover + .character_sprite{
         margin-left: 75px;
 }
 
+    /* .about_screenshot{
+        height:400px;
+        object-fit: contain;
+    } */
+
+
     .finalLineAbout{
         display: flex;
         flex-direction: column;
@@ -919,11 +974,11 @@ button:hover + .character_sprite{
         text-indent: 0em;
         font-size: 14vw;
         letter-spacing: .4vw;
-        padding-bottom: 10vw;
+        padding-bottom: 2vw;
     }
 
     p{
-        line-height: 4vw;
+        line-height: 5vw;
         font-size: 4vw;
     }
 
@@ -945,8 +1000,16 @@ button:hover + .character_sprite{
         margin-right: 0px;
     }
 
+    .character{
+
+    }
+
     .character_sprite{
             margin-left: -40.65vw;
+    }
+
+    .MonsterEyesContainer{
+
     }
 
     .book_button_back:hover{
@@ -959,11 +1022,39 @@ button:hover + .character_sprite{
     .book_button_forward, .book_button_forward:hover, .book_button_back, .book_button_back:hover{
         background-size: 14vw 10vw;
     }
-
-    .grimoire_words{
-        margin-left: 50px;
-        margin-right: 50px;
+/*
+    .About{
+        display: flex;
+        flex-direction: column;
+        margin-left: 0px;
+        margin-right: 0px;
     }
+    .aboutWordsAndSlide{
+        margin-top: 100px;
+        display: flex;
+        flex-basis: center;
+    }
+    .aboutWords{
+        display: flex;
+        flex-direction: column;
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-left: 0px;
+        text-align: left;
+    }
+    li{
+        font-size: 35px;
+    }
+    .about_screenshot{
+        height:400px;
+        object-fit: contain;
+    }
+    .finalLineAbout{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 150px;
+    } */
+
 
 
 }

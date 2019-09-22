@@ -44,7 +44,7 @@ const data = [
         },
     {
     title:"Enchanted Candles",
-    description:'To regain lost health, Wicka can melt the candles she finds to repair her wax body. Which is fortunate...',
+    description:'To regain lost health, Wicka can melt the candles she finds to repair her wax body. Which is fortunate because...',
     img:"media/gifs/telekinesis_brick_riding2.gif",
     width: 600,
     height: 338,
@@ -54,7 +54,7 @@ const data = [
         },
     {
     title:"Monsters!",
-    description:'...because the world is littered with monsters. Some say these monsters are manifestations of the spellcaster\'s own demons made real by her magic.',
+    description:'...the world is littered with monsters. Some say these monsters are manifestations of the spellcaster\'s own demons made real by her magic.',
     img:"media/gifs/telekinesis2.gif",
     width: 471,
     height: 337,

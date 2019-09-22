@@ -4,13 +4,12 @@ import React, {Component} from 'react';
 class MonsterEyes extends Component{
     constructor(props){
         super(props)
-        this.state = {animation: 'openEyes 0s steps(30) reverse', open: false, random: 0}
-        // this.randomBlink = this.randomBlink.bind(this)
+        this.state = {animation: 'openEyes 0s steps(30) reverse', open: false, random: 0, blinking:false}
+
         this.openEyes = this.openEyes.bind(this)
         this.randomBlink = this.randomBlink.bind(this)
 
         this.delay = this.props.delay*2000
-        console.log(this.props.delay, this.delay)
 
 
     }
@@ -20,7 +19,7 @@ class MonsterEyes extends Component{
     }
 
     randomBlink(){
-        if (Math.random() > .75){
+        if (Math.random() > .5 && this.state.blinking === false){
             this.setState( {animation: 'openEyes 1.2s steps(30) infinite alternate', blinking: true} )
             setTimeout( ()=> {this.setState({animation: 'eyesOpened 1s steps(1) infinite alternate-reverse', blinking: false})},2400);
         }

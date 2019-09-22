@@ -6,7 +6,7 @@ import About from './About'
 import Grimoire from './Grimoire'
 import Download from './Download'
 
-import './App.css';
+import './App_backup.css';
 
 
 class App extends Component {
