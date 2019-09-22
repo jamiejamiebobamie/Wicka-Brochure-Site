@@ -9,7 +9,12 @@ function GrimoirePage(props){
                 <p>{data[props.pageIndex].description}</p>
             </div>
             <div className={data[props.pageIndex].grim_picture}>
-                <img className="test_gif" width={data[props.pageIndex].width} height={data[props.pageIndex].height} src={data[props.pageIndex].img} alt="img"/>
+                <img
+                    className="test_gif"
+                    width={data[props.pageIndex].width}
+                    height={data[props.pageIndex].height}
+                    src={data[props.pageIndex].img}
+                    alt="img"/>
             </div>
         </div>
     )

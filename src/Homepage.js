@@ -1,14 +1,12 @@
 import React, {Component} from 'react'
 import NavBar from './NavBarHomepage'
 import MonsterEyesContainer from './MonsterEyesContainer'
-import data from './monsterEyesLocations'
-
-
 
 class Homepage extends Component {
     constructor(props){
         super(props)
-        this.state={number:data.length-1, storedState: true}
+        this.state = { storedState: true }
+
         this.toggleNavbar = this.toggleNavbar.bind(this)
     }
 
@@ -16,15 +14,18 @@ class Homepage extends Component {
         this.setState({storedState: !this.state.storedState})
     }
 
-    // <img className="thisIsForSpritePreload" src="/media/sprites/character_handUp.png" width='1' height='1' alt=""/>
-
     render(){
         return (
           <div className="Homepage">
 
-              <NavBar dropdownMenu={true} width={this.props.width} liftState={this.toggleNavbar} />
+              <NavBar
+                dropdownMenu={true}
+                width={this.props.width}
+                liftState={this.toggleNavbar} />
 
-              {this.props.height < 960 && this.state.storedState===true && this.props.width < 1400
+              { this.props.height < 960
+                  && this.state.storedState===true
+                  && this.props.width < 1400
 
               ?
 
@@ -33,10 +34,16 @@ class Homepage extends Component {
               :
 
               <div className="character">
-                  <MonsterEyesContainer update={this.props.update} width={this.props.width} height={this.props.height} />
+
+                  <MonsterEyesContainer
+                    update={this.props.update}
+                    width={this.props.width}
+                    height={this.props.height} />
+
                   <div className="character_sprite"/>
+
               </div>
-          }
+            }
 
           </div>
 
@@ -46,7 +53,3 @@ class Homepage extends Component {
 }
 
 export default Homepage
-// <img className="monster_pack" src="/media/imgs/monster_eyes_static.png" width='500' height='80.818' alt="logo" />
-
-// <div className="candle_sprite_test"/>
-// <div className="door_sprite"/>

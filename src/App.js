@@ -18,40 +18,50 @@ class App extends Component {
         this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
     }
 
-        componentDidMount() {
-          this.updateWindowDimensions();
-          window.addEventListener('resize', this.updateWindowDimensions);
-        }
+    componentDidMount() {
+      this.updateWindowDimensions();
+      window.addEventListener('resize', this.updateWindowDimensions);
+    }
 
-        componentWillUnmount() {
-          window.removeEventListener('resize', this.updateWindowDimensions);
-        }
+    componentWillUnmount() {
+      window.removeEventListener('resize', this.updateWindowDimensions);
+    }
 
-        updateWindowDimensions() {
-          this.setState({ width: window.innerWidth, height: window.innerHeight });
-        }
-    // navbar on all routes is temporary. I need to build a homepage specific navbar.
+    updateWindowDimensions() {
+      this.setState({ width: window.innerWidth, height: window.innerHeight });
+    }
 
-render(){
-    return (
-      <Router>
-          <div className="App">
-              <Route exact path="/"
-              render={props => <Homepage update={this.updateWindowDimensions} width={this.state.width} height={this.state.height} />}
-               />
-              <Route path="/about"
-              render={props => <About width={this.state.width} />}
-               />
-              <Route path="/grimoire"
-              render={props => <Grimoire width={this.state.width} />}
-               />
-               <Route path="/download"
-               render={props => <Download width={this.state.width} />}
-                />
-          </div>
-      </Router>
-    );
-}
+    render(){
+        return (
+          <Router>
+              <div className="App">
+                  <Route exact path="/"
+                    render={ props =>
+                        <Homepage
+                            update={this.updateWindowDimensions}
+                            width={this.state.width}
+                            height={this.state.height} />
+                    }
+                   />
+                  <Route path="/about"
+                    render={ props =>
+                        <About width={this.state.width} />
+                    }
+                   />
+                  <Route path="/grimoire"
+                    render={ props =>
+                        <Grimoire width={this.state.width} />
+                    }
+                   />
+                   <Route path="/download"
+                    render={ props =>
+                        <Download width={this.state.width} />
+                    }
+                    />
+              </div>
+          </Router>
+        );
+    }
 
 }
 

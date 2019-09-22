@@ -5,23 +5,20 @@ const data = [
     img:"media/imgs/_wicka4.png",
     width: 600,
     height: 285,
-    // img:"media/gifs/whip_wand2.gif",
-    // width: 505,
-    // height: 338,
     style: "innerDIV",
     grim_picture: "grimoire_picture",
     grim_words: "grimoire_words"
-        },
+    },
     {
     title:"Wax Witches",
     description:'Wax Witches give up their mortal, human bodies for wax ones. Contrary to popular belief, not all Wax Witches eat children.',
-    img:"media/imgs/wickwoman1.png",
+    img:"media/imgs/_wickwoman1.png",
     width: 330,
     height: 400,
     style: "innerDIV",
     grim_picture: "grimoire_picture",
     grim_words: "grimoire_words"
-        },
+    },
     {
     title:"The Exit",
     description:'After waking, you can see the exit in the distance. To leave, you must defeat the monsters that stand in your way.',
@@ -31,7 +28,7 @@ const data = [
     style: "innerDIV",
     grim_picture: "door_sprite",
     grim_words: "grimoire_words"
-        },
+    },
     {
     title:"Health and Mana",
     description:'Being an immortal witch, Wicka uses both mana and health to power her spells. Mana cannot exceed health, but replenishes on its own.',
@@ -41,7 +38,7 @@ const data = [
     style: "innerDIV_healthbar",
     grim_picture: "test_gif_health_bar",
     grim_words: "grimoire_words_healthBar"
-        },
+    },
     {
     title:"Enchanted Candles",
     description:'To regain lost health, Wicka can melt the candles she finds to repair her wax body. Which is fortunate because...',
@@ -51,7 +48,7 @@ const data = [
     style: "innerDIV",
     grim_picture: "grimoire_picture",
     grim_words: "grimoire_words"
-        },
+    },
     {
     title:"Monsters!",
     description:'...the world is littered with monsters. Some say these monsters are manifestations of the spellcaster\'s own demons made real by her magic.',
@@ -61,7 +58,7 @@ const data = [
     style: "innerDIV",
     grim_picture: "grimoire_picture",
     grim_words: "grimoire_words"
-        },
+    },
     {
     title:"Wicka's Flame",
     description:'The flame on Wicka\'s head is drawn to these monsters, illuminating the closest one.',
@@ -71,7 +68,7 @@ const data = [
     style: "innerDIV",
     grim_picture: "grimoire_picture",
     grim_words: "grimoire_words"
-        },
+    },
     {
     title:"Whip Wand",
     description:'Whip Wand turns Wicka\'s wand into a whip. It requires no mana or health to cast. You start the game with this spell.',
@@ -81,7 +78,7 @@ const data = [
     style: "innerDIV",
     grim_picture: "grimoire_picture",
     grim_words: "grimoire_words"
-        },
+    },
     {
     title:"Spellbooks",
     description:'Monsters on occasion drop spellbooks that grant Wicka more spells.',
@@ -91,17 +88,17 @@ const data = [
     style: "innerDIV",
     grim_picture: "grimoire_picture",
     grim_words: "grimoire_words"
-        },
-        {
-        title:"Cursed Grimoires",
-        description:'While some spellbooks are a boon, others are cursed and attack any who come too close.',
-        img:"media/gifs/book1.gif",
-        width: 600,
-        height: 338,
-        style: "innerDIV",
-        grim_picture: "grimoire_picture",
-        grim_words: "grimoire_words"
-            },
+    },
+    {
+    title:"Cursed Grimoires",
+    description:'While some spellbooks are a boon, others are cursed and attack any who come too close.',
+    img:"media/gifs/book1.gif",
+    width: 600,
+    height: 338,
+    style: "innerDIV",
+    grim_picture: "grimoire_picture",
+    grim_words: "grimoire_words"
+    },
     {
     title:"Melt Self",
     description:'As molten wax, Wicka can sink below the stone floor to evade her enemies. While useful, this spell leeches health.',
@@ -111,7 +108,7 @@ const data = [
     style: "innerDIV",
     grim_picture: "grimoire_picture",
     grim_words: "grimoire_words"
-        },
+    },
     {
     title:"Freeze Ray",
     description:'Wicka can briefly freeze enemies in their tracks with Freeze Ray. This spell uses mana.',
@@ -121,7 +118,7 @@ const data = [
     style: "innerDIV",
     grim_picture: "grimoire_picture",
     grim_words: "grimoire_words"
-        },
+    },
     {
     title:"Telekinesis",
     description:'Wicka can toss bricks from the floor at her enemies. This spell uses mana.',
@@ -131,7 +128,7 @@ const data = [
     style: "innerDIV",
     grim_picture: "grimoire_picture",
     grim_words: "grimoire_words"
-        },
+    },
     {
     title:"Brick-Riding",
     description:'Using Melt then Telekinesis allows Wicka to start walking on the magicked bricks',
@@ -141,7 +138,7 @@ const data = [
     style: "innerDIV",
     grim_picture: "grimoire_picture",
     grim_words: "grimoire_words"
-        },
+    },
     {
     title:"Immolate",
     description:'Immolate turns Wicka\'s flame into a raging inferno. This spell uses health, so cast with caution!',
@@ -151,7 +148,7 @@ const data = [
     style: "innerDIV",
     grim_picture: "grimoire_picture",
     grim_words: "grimoire_words"
-        },
+    },
     {
     title:"Melt Ice",
     description:'Bricks that have been frozen by Freeze Ray cannot be lifted by Telekinesis. Use Immolate to free them.',
@@ -161,18 +158,17 @@ const data = [
     style: "innerDIV",
     grim_picture: "grimoire_picture",
     grim_words: "grimoire_words"
-        },
-        {
-        title:"The Controls",
-        description:' "Wicka" requires a Mac and Xbox controller to play. (Very niche market.)',
-        img:"media/imgs/wicka_controller_whiteBackground.png",
-        width: 550,
-        height: 390,
-        style: "innerDIV",
-        grim_picture: "grimoire_picture",
-        grim_words: "grimoire_words"
-            },
-
+    },
+    {
+    title:"The Controls",
+    description:' "Wicka" requires a Mac and Xbox controller to play. (Very niche market.)',
+    img:"media/imgs/wicka_controller_whiteBackground.png",
+    width: 550,
+    height: 390,
+    style: "innerDIV",
+    grim_picture: "grimoire_picture",
+    grim_words: "grimoire_words"
+    },
     {
     title:"Download the Game",
     description:'Go to the \'Download and Play!\' section to download the game.',
@@ -182,7 +178,7 @@ const data = [
     style: "innerDIV",
     grim_picture: "grimoire_picture",
     grim_words: "grimoire_words"
-        },
+    },
 ]
 
 export default data
