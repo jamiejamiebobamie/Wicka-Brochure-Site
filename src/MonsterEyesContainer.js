@@ -16,6 +16,7 @@ class MonsterEyesContainer extends Component{
                 this.coords.push([i,i/0.3-rand*i*10+30,-rand*i*5-i*40+55])
             }
         }
+        this.verticalOffset = 400;
     }
 
     render(){
@@ -30,35 +31,35 @@ class MonsterEyesContainer extends Component{
                     width={this.props.width}
                     height={this.props.height*(.1/400)}
                     left={this.coords[2][2]}
-                    top={this.coords[2][1]-20} />
+                    top={this.coords[2][1]-this.verticalOffset} />
                 <MonsterEyes
                     delay={2}
                     update={this.props.update}
                     width={this.props.width}
                     height={this.props.height*(.1/400)}
                     left={this.coords[3][2]}
-                    top={this.coords[3][1]-20} />
+                    top={this.coords[3][1]-this.verticalOffset} />
                 <MonsterEyes
                     delay={3}
                     update={this.props.update}
                     width={this.props.width}
                     height={this.props.height*(.1/400)}
                     left={this.coords[4][2]}
-                    top={this.coords[4][1]-20} />
+                    top={this.coords[4][1]-this.verticalOffset} />
                 <MonsterEyes
                     delay={4}
                     update={this.props.update}
                     width={this.props.width}
                     height={this.props.height*(.1/400)}
                     left={this.coords[5][2]}
-                    top={this.coords[5][1]-20} />
+                    top={this.coords[5][1]-this.verticalOffset} />
                 <MonsterEyes
                     delay={5}
                     update={this.props.update}
                     width={this.props.width}
                     height={this.props.height*(.1/400)}
                     left={this.coords[6][2]}
-                    top={this.coords[6][1]-20} />
+                    top={this.coords[6][1]-this.verticalOffset} />
             </div>
             )
     }

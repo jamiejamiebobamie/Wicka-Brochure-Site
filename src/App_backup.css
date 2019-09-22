@@ -84,13 +84,13 @@ html, body {
     align-items: stretch;
 
 }
-
+/*
 .character{
     position: fixed;
     Width: 100%;
     bottom: 0;
 }
-
+ */
 
 
 .index_buttons{
@@ -219,7 +219,61 @@ img:not([src]) {
   to{background-position-x:-35840px;}
 }
 
+
+.homepage_bottom{
+    position: fixed;
+    Width: 100%;
+    bottom: 0;
+
+}
+
+.character{
+    display: flex;
+    position: relative;
+    z-index: 1
+}
+
 .character_sprite{
+    margin-top: -150px;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    width: 930px;
+    height: 447px;
+    background: url('/media/sprites/character_handDown.png') left center;
+    animation: idle 4s steps(32) infinite alternate-reverse;
+    transform: scale(.75);
+    position: absolute;
+
+    z-index:3;
+}
+
+.character_background_img{
+    margin-top: -150px;
+    left: 0;
+    right: 0;
+    /* margin: auto; */
+
+    /* margin-bottom: -55px; */
+    display: flex;
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    width: 930px;
+    height: 447px;
+    background: url('/media/imgs/character_background.png') left center;
+    animation: idle 4s steps(32) infinite alternate-reverse;
+    transform: scale(.75);
+    z-index:2;
+    position: absolute;
+}
+
+/* .character_sprite{
     margin-bottom: -55px;
     display: flex;
     align-self: center;
@@ -230,7 +284,7 @@ img:not([src]) {
     background: url('/media/sprites/character_handDown.png') left center;
     animation: idle 4s steps(32) infinite alternate-reverse;
     transform: scale(.75);
-}
+} */
 
 @keyframes idle{
   from{background-position-x:0px;}

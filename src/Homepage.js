@@ -33,14 +33,19 @@ class Homepage extends Component {
 
               :
 
-              <div className="character">
+              <div className="homepage_bottom">
+              <MonsterEyesContainer
+                  update={this.props.update}
+                  width={this.props.width}
+                  height={this.props.height} />
 
-                  <MonsterEyesContainer
-                    update={this.props.update}
-                    width={this.props.width}
-                    height={this.props.height} />
-
-                  <div className="character_sprite"/>
+                  <div className="character">
+                      <div className="character_sprite"/>
+                      <img
+                          className="character_background_img"
+                          src='/media/imgs/character_background.png'
+                          alt=''/>
+                    </div>
 
               </div>
             }
@@ -51,5 +56,8 @@ class Homepage extends Component {
     }
 
 }
+
+
+
 
 export default Homepage
