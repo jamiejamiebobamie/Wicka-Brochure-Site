@@ -1113,11 +1113,17 @@ transform: translateX(-50%);
     }
 
     .character{
-
+        /* margin-right: 100vw; */
+        position: absolute;
+        left: -40%;
+        -webkit-transform: translateX(-30%);
+        transform: translateX(-30%)
+            /* margin-left: -40.65vw; */
+            /* overflow: hidden; */
     }
 
     .character_sprite{
-            margin-left: -40.65vw;
+
     }
 
     .MonsterEyesContainer{
