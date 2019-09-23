@@ -225,7 +225,6 @@ img:not([src]) {
     position: fixed;
     Width: 100%;
     bottom: 0;
-
 }
 
 .character{
@@ -608,7 +607,11 @@ h3{
     background-color: black;
     margin-bottom: 0px;
     max-height: 270px;
-    height: 20vw;
+    /* max-height: 0px; */
+
+    /* height: 20vw; */
+    height: 10vw;
+
     min-height: 230px;
 }
 
@@ -721,7 +724,10 @@ transform: translateX(-50%);
     }
 
     .book_button_forward, .book_button_forward:hover{
-        background-size: 7vw 5vw;
+        /* background-size: 7vw 5vw; */
+        background-size: 90px 60px;
+
+
         z-index: 5;
         display: block;
         /* margin-top:  100px; */
@@ -732,7 +738,10 @@ transform: translateX(-50%);
     }
 
 .book_button_back, .book_button_back:hover{
-        background-size: 7vw 5vw;
+        /* background-size: 7vw 5vw; */
+        /* background-size: 70px 50px; */
+        background-size: 90px 60px;
+
         z-index: 5;
         display: block;
         /* margin-top:  100px; */
@@ -835,7 +844,9 @@ transform: translateX(-50%);
     }
 
     .book_button_forward, .book_button_forward:hover, .book_button_back, .book_button_back:hover{
-        background-size: 11vw 7vw;
+        /* background-size: 11vw 7vw; */
+        background-size: 70px 50px;
+
         /* margin: 10px; */
         /* background-color: pink; */
     }
@@ -1138,7 +1149,7 @@ transform: translateX(-50%);
     } */
 
     .book_button_forward, .book_button_forward:hover, .book_button_back, .book_button_back:hover{
-        background-size: 14vw 10vw;
+        /* background-size: 14vw 10vw; */
     }
 
 
