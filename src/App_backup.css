@@ -220,6 +220,20 @@ img:not([src]) {
   to{background-position-x:-35840px;}
 }
 
+.Homepage{
+        /* scroll-snap-type: y mandatory; */
+        /* scroll-padding: 50%; */
+        /* scroll-snap-stop: always; */
+}
+
+.container{
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
+
+.container .snap{
+      scroll-snap-align: center;
+}
 
 .homepage_bottom{
     position: fixed;
