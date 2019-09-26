@@ -87,6 +87,7 @@ html, body {
 .aboutContent{
     margin-left: 100px;
     margin-right: 100px;
+    /* transform: scale(.50); */
 }
 /*
 .character{
@@ -370,10 +371,11 @@ img:not([src]) {
 
 .downloadLink{
     text-decoration: none;
+    /* margin-bottom: 300px; */
 }
 
 .downloadLink:hover{
-    text-decoration: underline;
+    /* text-decoration: underline; */
     color: #ebd315;
 }
 
@@ -381,10 +383,32 @@ img:not([src]) {
     margin-top: 250px;
     color: #ebd315;
     opacity: .5;
+    border-radius: 10px;
+    border-color: #ebd315;
+    border-style: solid;
+    border-width: thick;
+    text-align: center;
+    justify-content: center;
+
+
+    font-size: 3vw;
+    margin-left: 27vw;
+    margin-right: 27vw;
+    padding-top: 3vw;
+    padding-bottom: 3vw;
+}
+
+.banner{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-top: -270px;
+    max-width: 800px;
 }
 
 .downloadP:hover{
     opacity: .7;
+    text-decoration: none;
 }
 
 .downloadInstructions{
@@ -427,11 +451,17 @@ img:not([src]) {
 
 }
 
+/* .firstLineAbout{
+    margin-top: 200px;
+
+} */
+
+
 .aboutWords{
     display: flex;
     flex-direction: column;
     margin-top: 75px;
-    margin-bottom: 75px;
+    /* margin-bottom: 75px; */
     /* margin-right: 150px;
     margin-left: 150px; */
     /* text-align: left; */
@@ -446,7 +476,15 @@ img:not([src]) {
 .right{
     margin-left: 150px;
 
-    text-align: right;
+    text-align: left;
+
+}
+
+.center{
+    /* margin-left: 150px; */
+
+    text-align: center;
+    : 100px;
 
 }
 
@@ -456,14 +494,14 @@ img:not([src]) {
 } */
 
 .about_screenshot{
-    height:400px;
+    height:350px;
     object-fit: contain;
 }
 
 
 .downloadWordsRed, .finalLineAbout, .downloadWordsWhite{
     font-family: 'Optima', sans-serif;
-    font-size: 2vw;
+    font-size: 1.5vw;
     letter-spacing: .4vw;
     line-height: 3vw;
     margin-bottom: 2vw;
@@ -1076,6 +1114,12 @@ transform: translateX(-50%);
 
 }
 
+@media only screen and (max-width: 1400px){
+.downloadWordsRed, .finalLineAbout, .downloadWordsWhite{
+    font-size: 2.5vw;
+}
+}
+
 
 @media only screen and (max-width: 1000px){
 
@@ -1089,6 +1133,12 @@ transform: translateX(-50%);
     width:100%;
     margin-top: 0px;
     margin-bottom: 0px;
+}
+
+.banner{
+
+    width:100%;
+
 }
 
 .About{
@@ -1124,7 +1174,7 @@ transform: translateX(-50%);
 
 
     .aboutWordsAndSlide, .firstLineAbout{
-        margin-top: 0px;
+        /* margin-top: 0px; */
         margin-left: 0px;
         margin-right: 0px;
         display: flex;
@@ -1132,14 +1182,14 @@ transform: translateX(-50%);
     }
 
     .firstLineAbout{
-        margin-top: 200px;
+
     }
 
     .aboutWords{
         display: flex;
         flex-direction: column;
-        margin-top: 30px;
-        margin-bottom: 30px;
+        /* margin-top: 30px; */
+        /* margin-bottom: 30px; */
 
         margin-right: 75px;
         margin-left: 75px;
@@ -1151,6 +1201,8 @@ transform: translateX(-50%);
     line-height: 30px;
     margin-bottom: 30px;
 }
+
+
 
 .finalLineAbout{
         margin-top: 100px;
@@ -1177,6 +1229,14 @@ transform: translateX(-50%);
 
     .toggleDropdownMenu{
         margin-left: 15px;
+    }
+
+    .downloadP{
+        font-size: 5vw;
+        margin-left: 20vw;
+        margin-right: 20vw;
+        padding-top: 5vw;
+        padding-bottom: 5vw;
     }
 
     h2{

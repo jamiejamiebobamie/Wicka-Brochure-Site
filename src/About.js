@@ -21,20 +21,19 @@ class About extends Component {
                 liftState={this.toggleNavbar} />
                 <div className="aboutContent">
 
-                    <div className="firstLineAbout">
-                        <div className="aboutWords left">
-                          <h5
-                            className="downloadWordsRed">
-                            "Wicka" is a 3rd person action-adventure game,
-                            made with the Unreal Engine.
-                          </h5>
-                        </div>
-                        <img className="about_screenshot" src={data[0]} alt=""/>
-                    </div>
-
                     { this.props.width > 1400
                         ?
                         <div>
+                        <div className="firstLineAbout">
+                            <div className="aboutWords left">
+                              <h5
+                                className="downloadWordsRed">
+                                "Wicka" is a 3rd person action-adventure game,
+                                made with the Unreal Engine.
+                              </h5>
+                            </div>
+                            <img className="about_screenshot" src={data[0]} alt=""/>
+                        </div>
                         <div className="aboutWordsAndSlide">
                             <img className="about_screenshot" src={data[4]} alt=""/>
                             <ul className="aboutWords right">
@@ -66,6 +65,17 @@ class About extends Component {
                         :
 
                         <div>
+
+                        <div className="firstLineAbout">
+                        <img className="about_screenshot" src={data[0]} alt=""/>
+                            <div className="aboutWords center">
+                              <h5
+                                className="downloadWordsRed">
+                                "Wicka" is a 3rd person action-adventure game,
+                                made with the Unreal Engine.
+                              </h5>
+                            </div>
+                        </div>
 
                         <div className="aboutWordsAndSlide">
                             <img className="about_screenshot" src={data[4]} alt=""/>

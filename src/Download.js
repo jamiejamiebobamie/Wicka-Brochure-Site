@@ -6,7 +6,7 @@ function Download(props){
       <div className="Download">
       <NavBar dropdownMenu={false} width={props.width}/>
          <a
-            className="downloadLink fade2"
+            className="downloadLink"
             href="https://drive.google.com/file/d/1gMgRZOwGviJM7Ea-v2l9q56bQqEx7PrX/view?usp=sharing">
             <p className="downloadP">Click to Download</p>
         </a>
