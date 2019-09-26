@@ -10,7 +10,8 @@ class Grimoire extends Component {
         this.state = {
             pageIndex: 0,
             backgroundUrl: '/media/sprites/book_rollover_black_background_CROPPED.png',
-            animation:'openBook 3s steps(1) infinite'}
+            animation:'openBook 3s steps(1) infinite',
+            className:"grimoire_slideshow-container fade"}
         this.lastPage = data.length
     }
 
@@ -22,7 +23,7 @@ class Grimoire extends Component {
             } else {
                 this.setState({pageIndex:0})
             }
-            this.setState({animation:'turnPageForward 3s steps(86) forwards'})
+            this.setState({animation:'turnPageForward 3s steps(86) forwards', className:this.addFadeToPages(this.state.className)})
         } else {
             if (this.state.pageIndex - 1 < 0) {
                 this.setState({pageIndex:this.lastPage-1})
@@ -30,7 +31,15 @@ class Grimoire extends Component {
                 let lastPage = this.state.pageIndex-1
                 this.setState({pageIndex:lastPage})
             }
-            this.setState({animation:'turnPageBackward 3s steps(86) forwards'})
+            this.setState({animation:'turnPageBackward 3s steps(86) forwards', className:this.addFadeToPages(this.state.className)})
+        }
+    }
+
+    addFadeToPages(props){
+        if (props === "grimoire_slideshow-container fade1"){
+            return "grimoire_slideshow-container fade2"
+        } else {
+            return "grimoire_slideshow-container fade1"
         }
     }
 
@@ -40,7 +49,7 @@ class Grimoire extends Component {
           <div className="Grimoire">
               <NavBar width={this.props.width}/>
 
-              <div className="grimoire_slideshow-container fade">
+              <div className={this.state.className}>
                     <GrimoirePage pageIndex={this.state.pageIndex}/>
               </div>
 

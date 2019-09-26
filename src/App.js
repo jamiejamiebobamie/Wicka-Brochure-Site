@@ -16,6 +16,7 @@ class App extends Component {
         this.state = {width: 0, height: 0, thePosition:0}
         //https://stackoverflow.com/questions/36862334/get-viewport-window-height-in-reactjs
         this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
+        this.scrollToTopBottom = this.scrollToTopBottom.bind(this)
     }
 
     componentDidMount() {
@@ -51,6 +52,10 @@ listenToScroll = () => {
   })
 }
 
+scrollToTopBottom(bottom){
+    this.setState({thePosition:bottom})
+}
+
     render(){
         return (
           <Router>
@@ -61,7 +66,9 @@ listenToScroll = () => {
                             update={this.updateWindowDimensions}
                             width={this.state.width}
                             height={this.state.height}
-                            thePosition={this.state.thePosition} />
+                            thePosition={this.state.thePosition}
+                            scrollToTopBottom={this.scrollToTopBottom}
+                             />
                     }
                    />
                   <Route path="/about"

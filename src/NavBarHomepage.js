@@ -52,7 +52,6 @@ class NavBar extends Component {
                     toggleMenuFunction={this.toggleMenu} />
               </div>
             )
-
     )
 }
 }

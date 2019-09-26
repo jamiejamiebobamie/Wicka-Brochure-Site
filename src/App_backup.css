@@ -84,6 +84,10 @@ html, body {
     align-items: stretch;
 
 }
+.aboutContent{
+    margin-left: 100px;
+    margin-right: 100px;
+}
 /*
 .character{
     position: fixed;
@@ -224,15 +228,16 @@ img:not([src]) {
         /* scroll-snap-type: y mandatory; */
         /* scroll-padding: 50%; */
         /* scroll-snap-stop: always; */
+        scroll-snap-type: y mandatory;
+        overflow-y: scroll;
 }
 
-.container{
-    scroll-snap-type: y mandatory;
-    overflow-y: scroll;
+.snap{
+    position:absolute;
 }
 
-.container .snap{
-      scroll-snap-align: center;
+.Homepage .snap{
+    scroll-snap-align: end;
 }
 
 .homepage_bottom{
@@ -427,15 +432,28 @@ img:not([src]) {
     flex-direction: column;
     margin-top: 75px;
     margin-bottom: 75px;
+    /* margin-right: 150px;
+    margin-left: 150px; */
+    /* text-align: left; */
+}
+
+.left{
     margin-right: 150px;
-    margin-left: 150px;
+
     text-align: left;
 }
 
+.right{
+    margin-left: 150px;
 
+    text-align: right;
+
+}
+
+/*
 .aboutWords{
     text-decoration:
-}
+} */
 
 .about_screenshot{
     height:400px;
@@ -591,25 +609,60 @@ h3{
 .grimoire_words_healthBar{
     margin-right: 30px;
     margin-left: 30px;
+    margin-bottom: -80px;
+
 
 }
 
-.fade {
-  -webkit-animation-name: fade;
+.fade1 {
+  -webkit-animation-name: fade1;
   -webkit-animation-duration: 3s;
-  animation-name: fade;
+  animation-name: fade1;
   animation-duration: 3s;
   animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes fade {
+@-webkit-keyframes fade1 {
   from {opacity: 0}
   to {opacity: 1}
 }
 
-@keyframes fade {
+@keyframes fade1 {
   from {opacity: 0}
   to {opacity: 1}
+}
+
+
+.fade2 {
+  -webkit-animation-name: fade2;
+  -webkit-animation-duration: 3s;
+  animation-name: fade2;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes fade2 {
+  from {opacity: 0}
+  to {opacity: 1}
+}
+
+@keyframes fade2 {
+  from {opacity: 0}
+  to {opacity: 1}
+}
+
+.NavBar{
+    position: fixed;
+    Width: 100%;
+    top: 0;
+}
+
+.Player{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: pink;
 }
 
 
@@ -619,7 +672,7 @@ h3{
     bottom: 0;
     opacity: .7;
     background-color: black;
-    margin-bottom: 0px;
+    margin-bottom: 10px;
     max-height: 270px;
     /* max-height: 0px; */
 
@@ -929,6 +982,7 @@ transform: translateX(-50%);
         margin-top: 10px;
         margin-bottom: -100px;
         /* z-index: 4; */
+
         /* BE CAREFUL WITH NEGATIVE HEIGHTHS!!! */
     }
 
@@ -1044,6 +1098,22 @@ transform: translateX(-50%);
     margin-right: 0px;
 }
 
+.aboutContent{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+/* .left{
+    margin-right: 0px;
+    margin-right: 0px;
+
+}
+
+.right{
+    margin-right: 0px;
+    margin-right: 0px;
+
+} */
 
 .about_screenshot{
     width: 100%;
@@ -1068,10 +1138,12 @@ transform: translateX(-50%);
     .aboutWords{
         display: flex;
         flex-direction: column;
-        margin-top: 0px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+
         margin-right: 75px;
         margin-left: 75px;
-        text-align: left;
+        /* text-align: left; */
     }
 
 .downloadWordsRed, .finalLineAbout, .downloadWordsWhite{
