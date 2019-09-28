@@ -11,7 +11,7 @@ const data = [
     },
     {
     title:"Wax Witches",
-    description:'Wax Witches give up their mortal, human bodies for wax ones. Contrary to popular belief, not all Wax Witches eat children.',
+    description:'Wax Witches give up their human bodies to become immortal. Contrary to popular belief, not all Wax Witches eat children.',
     img:"media/imgs/_wickwoman1.png",
     width: 330,
     height: 400,
@@ -101,7 +101,7 @@ const data = [
     },
     {
     title:"Melt Self",
-    description:'As molten wax, Wicka can sink below the stone floor to evade her enemies. While useful, this spell leeches health.',
+    description:'As molten wax, Wicka can sink below the stone floor to evade her enemies. While useful, this spell drains health.',
     img:"media/gifs/melt_self2.gif",
     width: 600,
     height: 338,
