@@ -103,6 +103,10 @@ html, body {
     justify-content: space-evenly;
     z-index: 4;
     /* position: absolute; */
+    /* scroll-behavior: none; */
+    overflow: hidden;
+    height: 100%;
+    /* scroll: none; */
 }
 
 .index_buttons_homepage{
@@ -110,6 +114,8 @@ html, body {
     flex-direction: column;
     justify-content: space-evenly;
     margin-top: 30px;
+    overflow: hidden;
+    height: 100%;
 }
 
 .homepageLinks{
@@ -936,6 +942,8 @@ transform: translateX(-50%);
 
 }
 
+
+
 @media only screen and (max-width: 1400px) {
 
     h1{
@@ -1367,5 +1375,32 @@ transform: translateX(-50%);
     } */
 
 
+
+}
+
+
+@media only screen and (max-width: 475px) {
+.index_buttons{
+    /* background-color: pink; */
+    /* width: 50%; */
+    margin-left:-73px;
+
+
+}
+
+.logo_sprite{
+    transform: scale(.7);
+    /* margin-right: 30vw; */
+    /* margin-left:-23px; */
+    /* margin-left: -43px; */
+}
+
+.grimoire_slideshow-container{
+    margin-bottom: 50px;
+}
+
+.character{
+    margin-left: -150px;
+}
 
 }
