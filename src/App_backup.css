@@ -394,9 +394,9 @@ img:not([src]) {
     opacity: .5;
 
     /* border-radius: 10px; */
-    /* border-color: #ebd315; */
-    /* border-style: solid; */
-    /* border-width: thick; */
+    border-color: #ebd315;
+    border-style: solid;
+    border-width: medium;
     text-align: center;
     justify-content: center;
 
@@ -406,17 +406,18 @@ img:not([src]) {
 
 
     font-size: 3vw;
-    /* margin-left: 27vw; */
-    /* margin-right: 27vw; */
-    padding-top: 10vw;
-    padding-bottom: 9vw;
+    margin-left: 27vw;
+    margin-right: 27vw;
+    padding-top: 3vw;
+    padding-bottom: 3vw;
     background-color: transparent;
-    width: 100%;
+    /* width: 100%; */
+    /* max-width:700px; */
 }
 
 .monsterEyesDownloadContainer{
     /* margin-top: -100px; */
-    /* transform: scale(2); */
+    transform: scale(2);
 }
 
 .downloadP:hover{
@@ -520,7 +521,9 @@ img:not([src]) {
 } */
 
 .about_screenshot{
-    height:350px;
+    height:20vw;
+    min-height: 350px;
+    /* height:350px; */
     object-fit: contain;
 }
 
@@ -1179,6 +1182,11 @@ transform: translateX(-50%);
     margin-right: 0px;
 }
 
+
+    /* .downloadP{
+        font-size: 4vw;
+    } */
+
 /* .left{
     margin-right: 0px;
     margin-right: 0px;
@@ -1259,10 +1267,10 @@ transform: translateX(-50%);
 
     .downloadP{
         font-size: 5vw;
-        /* margin-left: 20vw; */
-        /* margin-right: 20vw; */
-        padding-top: 15vw;
-        padding-bottom: 15vw;
+        margin-left: 20vw;
+        margin-right: 20vw;
+        padding-top: 7vw;
+        padding-bottom: 7vw;
     }
 
     h2{

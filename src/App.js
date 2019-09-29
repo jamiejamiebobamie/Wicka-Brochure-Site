@@ -83,9 +83,7 @@ scrollToTopBottom(bottom){
                    />
                    <Route path="/download"
                     render={ props =>
-                        <Download
-                        update={this.updateWindowDimensions}
-                        width={this.state.width} />
+                        <Download width={this.state.width} />
                     }
                     />
               </div>

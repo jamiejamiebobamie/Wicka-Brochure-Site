@@ -1,7 +1,5 @@
 import React from 'react'
 import NavBar from './NavBar'
-import MonsterEyesContainer from './MonsterEyesContainer'
-
 
 function Download(props){
     return (
@@ -10,24 +8,14 @@ function Download(props){
          <a
             className="downloadLink"
             href="https://drive.google.com/file/d/1gMgRZOwGviJM7Ea-v2l9q56bQqEx7PrX/view?usp=sharing">
-            <MonsterEyesContainer
-                update={props.update}
-                width={props.width}
-                height={props.height} />
-            <p className="downloadP">Click to Download</p>
-            <div className="monsterEyesDownloadContainer">
-            <MonsterEyesContainer
-                update={props.update}
-                width={props.width}
-                height={props.height} />
-            </div>
+            <p className="downloadP">Download</p>
         </a>
           <div className="downloadInstructions">
               <p
                 className="downloadWords">
                 This game is not finished and no longer in development.
-                Follow the link to my Google drive
-                and click the download button in the top right corner.
+                Click the 'Download' button above to go to my Google drive.
+                Once there, click the download button in the top right corner.
               </p>
               <img
                 className="downloadImage"

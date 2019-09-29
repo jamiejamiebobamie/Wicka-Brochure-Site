@@ -71,26 +71,26 @@ class Grimoire extends Component {
                         </button>
 
                         <div className='book'>
-                        <div
-                            className="book_sprite_anim"
-                            id="book_sprite"
-                            style={ {
-                                background:`url(${this.state.backgroundUrl}`,
-                                animation:this.state.animation } }
-                            onAnimationEnd={ () =>
-                                this.setState( {
-                                    animation:'openBook 3s steps(1) infinite'})
-                                }
-                            webkitAnimationEnd={ () =>
-                                this.setState( {
-                                    animation:'openBook 3s steps(1) infinite'})
-                                }>
-                        </div>
-                            <img
-                                className="book_background_img"
-                                src='/media/imgs/book_background.png'
-                                alt=''/>
-                        </div>
+                            <div
+                                className="book_sprite_anim"
+                                id="book_sprite"
+                                style={ {
+                                    background:`url(${this.state.backgroundUrl}`,
+                                    animation:this.state.animation } }
+                                onAnimationEnd={ () =>
+                                    this.setState( {
+                                        animation:'openBook 3s steps(1) infinite'})
+                                    }
+                                webkitAnimationEnd={ () =>
+                                    this.setState( {
+                                        animation:'openBook 3s steps(1) infinite'})
+                                    }>
+                            </div>
+                                <img
+                                    className="book_background_img"
+                                    src='/media/imgs/book_background.png'
+                                    alt=''/>
+                            </div>
 
                         <button className="book_button_forward"
                             type="button"

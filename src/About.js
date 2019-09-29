@@ -1,6 +1,5 @@
 import React, {Component} from 'react'
 import NavBar from './NavBar'
-import data from './aboutSlides_data.js'
 
 class About extends Component {
 
@@ -32,10 +31,10 @@ class About extends Component {
                                 made with the Unreal Engine.
                               </h5>
                             </div>
-                            <img className="about_screenshot" src={data[0]} alt=""/>
+                            <img className="about_screenshot" src="/media/imgs/_wicka3.png" alt=""/>
                         </div>
                         <div className="aboutWordsAndSlide">
-                            <img className="about_screenshot" src={data[4]} alt=""/>
+                            <img className="about_screenshot" src="/media/imgs/_freeze_ray5.png" alt=""/>
                             <ul className="aboutWords right">
                                 <li
                                     className="downloadWordsWhite">
@@ -51,14 +50,14 @@ class About extends Component {
                             <ul className="aboutWords left">
                                     <li
                                         className="downloadWordsWhite">
-                                        Collect spell books and gain new abilities.
+                                        Collect spellbooks and gain new abilities.
                                     </li>
                                     <li
                                         className="downloadWordsWhite">
                                         Exit the tomb and find the answers you seek!
                                     </li>
                             </ul>
-                            <img className="about_screenshot" src={data[1]} alt=""/>
+                            <img className="about_screenshot" src="/media/imgs/_immolate1.png" alt=""/>
                         </div>
                         </div>
 
@@ -67,7 +66,7 @@ class About extends Component {
                         <div>
 
                         <div className="firstLineAbout">
-                        <img className="about_screenshot" src={data[0]} alt=""/>
+                        <img className="about_screenshot" src="/media/imgs/_wicka3.png" alt=""/>
                             <div className="aboutWords center">
                               <h5
                                 className="downloadWordsRed">
@@ -78,7 +77,7 @@ class About extends Component {
                         </div>
 
                         <div className="aboutWordsAndSlide">
-                            <img className="about_screenshot" src={data[4]} alt=""/>
+                            <img className="about_screenshot" src="/media/imgs/_freeze_ray5.png" alt=""/>
                             <ul className="aboutWords">
                                 <li
                                     className="downloadWordsWhite">
@@ -89,14 +88,14 @@ class About extends Component {
                                 </li>
                                 <li
                                     className="downloadWordsWhite">
-                                    Collect spell books and gain new abilities.
+                                    Collect spellbooks and gain new abilities.
                                 </li>
                                 <li
                                     className="downloadWordsWhite">
                                     Exit the tomb and find the answers you seek!
                                 </li>
                             </ul>
-                            <img className="about_screenshot" src={data[1]} alt=""/>
+                            <img className="about_screenshot" src="/media/imgs/_immolate1.png" alt=""/>
                         </div>
                         </div>
 
