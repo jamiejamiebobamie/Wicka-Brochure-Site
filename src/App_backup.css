@@ -370,32 +370,58 @@ img:not([src]) {
 }
 
 .downloadLink{
+    /* color:white; */
+    /* background-color: pink; */
     text-decoration: none;
     /* margin-bottom: 300px; */
+    /* width: 100%; */
+    /* background-color: pink; */
+    /* height: 300px; */
 }
 
 .downloadLink:hover{
     /* text-decoration: underline; */
-    color: #ebd315;
+    /* color: #ebd315; */
+    /* border-color: #ebd315; */
+
 }
 
 .downloadP{
-    margin-top: 250px;
-    color: #ebd315;
+    margin-top: 200px;
+    margin-bottom: -20px;
+
+    /* color: #ebd315; */
     opacity: .5;
-    border-radius: 10px;
-    border-color: #ebd315;
-    border-style: solid;
-    border-width: thick;
+
+    /* border-radius: 10px; */
+    /* border-color: #ebd315; */
+    /* border-style: solid; */
+    /* border-width: thick; */
     text-align: center;
     justify-content: center;
 
+    /* font-family: 'Slenderman'; */
+    /* font-size: 10vw; */
+    color:white;
+
 
     font-size: 3vw;
-    margin-left: 27vw;
-    margin-right: 27vw;
-    padding-top: 3vw;
-    padding-bottom: 3vw;
+    /* margin-left: 27vw; */
+    /* margin-right: 27vw; */
+    padding-top: 10vw;
+    padding-bottom: 9vw;
+    background-color: transparent;
+    width: 100%;
+}
+
+.monsterEyesDownloadContainer{
+    /* margin-top: -100px; */
+    /* transform: scale(2); */
+}
+
+.downloadP:hover{
+    opacity: .7;
+    color: #ebd315;
 }
 
 .banner{
@@ -406,10 +432,10 @@ img:not([src]) {
     max-width: 800px;
 }
 
-.downloadP:hover{
+/* .downloadP:hover{
     opacity: .7;
     text-decoration: none;
-}
+} */
 
 .downloadInstructions{
     display: flex;
@@ -1233,10 +1259,10 @@ transform: translateX(-50%);
 
     .downloadP{
         font-size: 5vw;
-        margin-left: 20vw;
-        margin-right: 20vw;
-        padding-top: 5vw;
-        padding-bottom: 5vw;
+        /* margin-left: 20vw; */
+        /* margin-right: 20vw; */
+        padding-top: 15vw;
+        padding-bottom: 15vw;
     }
 
     h2{

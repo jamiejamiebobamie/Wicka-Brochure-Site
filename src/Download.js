@@ -1,5 +1,7 @@
 import React from 'react'
 import NavBar from './NavBar'
+import MonsterEyesContainer from './MonsterEyesContainer'
+
 
 function Download(props){
     return (
@@ -8,7 +10,17 @@ function Download(props){
          <a
             className="downloadLink"
             href="https://drive.google.com/file/d/1gMgRZOwGviJM7Ea-v2l9q56bQqEx7PrX/view?usp=sharing">
+            <MonsterEyesContainer
+                update={props.update}
+                width={props.width}
+                height={props.height} />
             <p className="downloadP">Click to Download</p>
+            <div className="monsterEyesDownloadContainer">
+            <MonsterEyesContainer
+                update={props.update}
+                width={props.width}
+                height={props.height} />
+            </div>
         </a>
           <div className="downloadInstructions">
               <p
