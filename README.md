@@ -51,4 +51,8 @@ The site's media sometimes loads slowly, depending on the user's internet connec
 ### CSS 'grimoire' page
 The CSS of the 'grimoire' page, specifically the 'navbar', 'content', and the 'page controls' HTML elements should be changed to better adapt to a changing page height.
 
+# 
+
+## Note
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
