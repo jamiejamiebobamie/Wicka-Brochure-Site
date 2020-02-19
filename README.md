@@ -1,6 +1,6 @@
 # Brochure Video Game Website
 
-This is a repository for a **React Router**, **node/Express** website. The website acts as a brochure and download portal to a video game I designed using the **Unreal Engine**. The video game is called **Wicka** and features third-person fantasy combat.
+This is a repository for a **React Router**, **node/Express** website. The website acts as a brochure and download platform to a video game I designed using the **Unreal Engine**. The video game is called **Wicka** and features third-person fantasy combat.
 
 The site consists of 4 pages:
 ```
