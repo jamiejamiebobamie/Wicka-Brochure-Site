@@ -52,5 +52,3 @@ The CSS of the 'grimoire' page, specifically the 'navbar', 'content', and the 'p
 ## Note
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-#
