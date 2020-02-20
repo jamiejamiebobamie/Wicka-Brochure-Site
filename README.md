@@ -11,9 +11,9 @@ The site consists of 4 pages:
 ```
 and contains custom spritesheets that I created using **Maya**, the **Unreal Engine**, **iMovie**, and the **Python PIL** library, as well as other media, such as images and gifs.
 
-The homepage features an interactive character that animates when the user 'mouses-over' the character, and blinking monster eyes, that are randomly-placed each time the page loads.
+The 'home' page features an interactive spritesheet that animates when the user 'mouses-over' it, and blinking monster eyes, that are randomly-placed each time the page loads.
 
-The site features a short 'about' page as well as an in-depth deep-dive 'grimoire' page that touches on the various game mechanics featured in the game.
+The site has a short 'about' page as well as an in-depth, "deep-dive" 'grimoire' page that touches on the various game mechanics of Wicka.
 
 Finally, the 'download' page allows users to download the game to their home computer.
 
