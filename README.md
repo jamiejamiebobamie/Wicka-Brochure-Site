@@ -3,12 +3,11 @@
 This is a repository for a **React Router**, **node/Express** website. The website acts as a brochure and download platform to a video game I designed using the **Unreal Engine**. The video game is called **Wicka** and features third-person fantasy combat.
 
 The site consists of 4 pages:
-```
 * home
 * grimoire
 * about
 * download
-```
+
 and contains custom spritesheets that I created using **Maya**, the **Unreal Engine**, **iMovie**, and the **Python PIL** library, as well as other media, such as images and gifs.
 
 The 'home' page features an interactive spritesheet that animates when the user 'mouses-over' it, and blinking monster eyes, that are randomly-placed each time the page loads.
